@@ -1,4 +1,4 @@
-package it.univpm.ProgettoEsame.models;
+package it.univpm.ProgettoEsame.model;
 
 import java.time.LocalDate;
 
