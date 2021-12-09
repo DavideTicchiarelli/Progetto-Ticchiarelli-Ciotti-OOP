@@ -2,7 +2,7 @@ package it.univpm.ProgettoEsame.model;
 
 import java.time.LocalDate;
 
-public class Eventi {
+public class Evento {
 	private String nome;
 	private String url;
 	private String  citta;
@@ -10,7 +10,7 @@ public class Eventi {
 	private String ora;
 	private String genere;
 	
-	public Eventi(String nome, String url, String citta, LocalDate date, String ora, String genere) {
+	public Evento(String nome, String url, String citta, LocalDate date, String ora, String genere,String stato) {
 		super();
 		this.nome = nome;
 		this.url = url;
