@@ -11,7 +11,6 @@ public class Evento {
 	private String genere;
 	
 	public Evento(String nome, String url, String citta, LocalDate date, String ora, String genere,String stato) {
-		super();
 		this.nome = nome;
 		this.url = url;
 		this.citta = citta;
