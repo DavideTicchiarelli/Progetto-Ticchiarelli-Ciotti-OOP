@@ -2248,3 +2248,91 @@ Binding(COMMAND+SHIFT+T,
 
 !ENTRY org.eclipse.ui 2 2 2021-12-13 20:49:42.405
 !MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-13 20:52:07.698
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.oBjzimgo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-13 20:52:07.699
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.oBjzimgo
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-13 20:52:07.699
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-13 20:52:07.699
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.oBjzimgo => OK
+!SESSION 2021-12-13 20:53:09.884 -----------------------------------------------
+eclipse.buildId=4.21.0.I20210906-0500
+java.version=17
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=it_IT
+Framework arguments:  -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -keyring /Users/nicco_ciotti/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -product org.eclipse.epp.package.java.product -data /Users/nicco_ciotti/Desktop/EsameOOP -product org.eclipse.epp.package.java.product -keyring /Users/nicco_ciotti/.eclipse_keyring
+
+!ENTRY org.eclipse.jface 2 0 2021-12-13 20:53:12.980
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-12-13 20:53:12.980
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5ec6a1b6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@40013051,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-13 20:53:15.743
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-13 20:53:15.744
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@36ebf962[org.springframework.tooling.boot.ls:1.29.0.202110250907(id=468)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-13 20:53:15.746
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-13 20:53:15.775
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-13 20:53:17.829
+!MESSAGE Boot LS startup time from start to initialized: 2071ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-13 20:53:18.053
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.SBOAlVHIisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-13 20:53:18.083
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-13 20:53:18.086
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-13 20:53:18.086
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-13 20:53:18.087
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-13 20:53:18.087
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.SBOAlVHI => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-13 20:53:18.092
+!MESSAGE classpath=66 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-13 20:53:18.093
+!MESSAGE buffering callback sts4.classpath.SBOAlVHI ProgettoEsame false 66
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-13 20:53:18.093
+!MESSAGE executing callback sts4.classpath.SBOAlVHI 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-12-13 20:53:18.546
+!MESSAGE executing callback sts4.classpath.SBOAlVHI SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2021-12-13 20:53:22.435
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
