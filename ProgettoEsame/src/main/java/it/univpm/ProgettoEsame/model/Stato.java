@@ -5,7 +5,7 @@ import java.util.Vector;
 public class Stato {
 
 	private String nome;
-	private String stateCode;
+//	private String stateCode;
 
 	private Vector<Evento> evento;
 
@@ -17,20 +17,31 @@ public class Stato {
 		this.evento = evento;
 	}
 
-	public String getNome() {
+	public String getNomeStato() {
 		return nome;
 	}
 
-	public void setNome(String nome) {
+	public void setNomeStato(String nome) {
 		this.nome = nome;
 	}
 
-	public String getStateCode() {
-		return stateCode;
-	}
-
-	public void setStateCode(String stateCode) {
-		this.stateCode = stateCode;
+//	public String getStateCode() {
+//		return stateCode;
+//	}
+//
+//	public void setStateCode(String stateCode) {
+//		this.stateCode = stateCode;
+//	}
+//	
+	public String toStringVector() {
+		String line="";
+		for(int i=0;i<evento.size();i++) {
+			line=evento.get(i).toString();		
+		}
+		return line;
 	}
 	
+	public String toString() {
+		return "nome="+nome+", listaEvento="+toStringVector()+"";
+	}
 }

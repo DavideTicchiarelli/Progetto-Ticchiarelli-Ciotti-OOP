@@ -1,6 +1,7 @@
 package it.univpm.ProgettoEsame.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,13 +17,13 @@ public class TestTicketmasterController {
 	@Autowired
 	private TicketmasterService ticketmasterservice;
 
-	@RequestMapping(value="/getArizona")
-		public ResponseEntity<Object> getEvento() {
-			return new ResponseEntity<>(ticketmasterservice.toJSON(ticketmasterservice.getEvento(ticketmasterservice.getJSONEvento("Arizona"))));
-	}
-	
-	@RequestMapping(value="/getEvento")
-	public ResponseEntity<Object> getEventobyStato(@RequestParam(name="state",defaultValue="Arizona") String stato) {
-		return new ResponseEntity<>(ticketmasterservice.toJSON(ticketmasterservice.getEvento(ticketmasterservice.getJSONEvento(stato))));
-	}
+//	@RequestMapping(value="/getArizona")
+//		public ResponseEntity<Object> getEvento() {
+//			return new ResponseEntity<>(ticketmasterservice.toJSON(ticketmasterservice.getEvento(ticketmasterservice.getJSONEvento("Arizona"))),HttpStatus.OK);
+//	}
+//	
+//	@GetMapping(value="/getEvento")
+//	public ResponseEntity<Object> getEventobyStato(@RequestParam(name="stateCode",defaultValue="AZ") String stateCode) {
+//		return new ResponseEntity<>(ticketmasterservice.toJSON(ticketmasterservice.getEvento(ticketmasterservice.getJSONEvento(stateCode))),HttpStatus.OK);
+//	}
 }

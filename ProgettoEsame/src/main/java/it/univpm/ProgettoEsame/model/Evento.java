@@ -5,13 +5,12 @@ import java.time.LocalDate;
 public class Evento {
 	private String nome;
 	private String url;
-	private String  citta;
+	private String citta;
 	private LocalDate date;
 	private String ora;
 	private String genere;
 	
 	public Evento(String nome, String url, String citta, LocalDate date, String ora, String genere,String stato) {
-		super();
 		this.nome = nome;
 		this.url = url;
 		this.citta = citta;
@@ -20,6 +19,8 @@ public class Evento {
 		this.genere = genere;
 	}
 
+	public Evento() {};
+	
 	public String getNome() {
 		return nome;
 	}
@@ -67,5 +68,8 @@ public class Evento {
 	public void setGenere(String genere) {
 		this.genere = genere;
 	}
-	
+
+	public String toString() {
+		return "nome="+nome+", url="+url+", città="+citta+", data="+date+", ora="+ora+", genere="+genere;
+	}
 }
