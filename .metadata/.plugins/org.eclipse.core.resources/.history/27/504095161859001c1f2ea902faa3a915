@@ -1,0 +1,5 @@
+package it.univpm.ProgettoEsame.service;
+
+public class TicketmasterService {
+
+}

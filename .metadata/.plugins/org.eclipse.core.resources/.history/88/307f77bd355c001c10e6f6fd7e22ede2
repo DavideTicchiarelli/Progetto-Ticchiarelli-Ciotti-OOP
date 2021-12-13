@@ -1,0 +1,167 @@
+package it.univpm.ProgettoEsame.service;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URL;
+import java.net.URLConnection;
+import java.time.LocalDate;
+import java.util.Vector;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
+import org.springframework.stereotype.Service;
+import org.springframework.web.client.RestTemplate;
+
+import it.univpm.ProgettoEsame.model.Evento;
+import it.univpm.ProgettoEsame.model.Stato;
+
+@Service
+public class TicketmasterServiceImpl implements TicketmasterService {
+
+	private String apikey="gcbb5hGg46qKGJTo1XeuoIY1AK7AgFiL";
+	private String url="https://app.ticketmaster.com/discovery/v2/events.json?stateCode=";
+
+	@Override
+	public JSONObject getJSONEvento(String stateCode) {
+		
+		JSONObject evento=null;
+		
+		try {
+			URL u = new URL(this.url+stateCode+"&apikey="+apikey);
+
+			URLConnection openConnection=u.openConnection();
+			InputStream input=openConnection.getInputStream();
+		
+			String dati="";
+			String line="";
+			try {
+				InputStreamReader inReader=new InputStreamReader(input);
+				BufferedReader buffer=new BufferedReader(inReader);
+				
+				while((line=buffer.readLine())!=null){
+					dati+=line;
+				}
+			}finally {
+				input.close();
+			}
+				evento=(JSONObject) JSONValue.parseWithException(dati);
+				
+		}catch(IOException e) {
+			e.printStackTrace();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+		return evento;
+			
+	}
+
+	@Override
+	public Stato getEvento(JSONObject obj) {
+		
+		Stato st=new Stato();
+		Vector<Evento>eventi=new Vector<Evento>();
+		
+//		JSONObject stateData=(JSONObject)obj.get("state");
+		JSONArray events=(JSONArray)obj.get("events");
+		
+//		st.setNome((String)stateData.get("name"));
+//		st.setStateCode((String)stateData.get("stateCode"));
+		
+		for(int i=0;i<events.size();i++) {
+			
+			JSONObject currentCont=(JSONObject) events.get(i);
+			Evento ev=new Evento();
+			
+			ev.setNome((String)currentCont.get("name"));
+			ev.setUrl((String)currentCont.get("url"));
+			ev.setCitta((String)currentCont.get("city"));
+			ev.setDate((LocalDate) currentCont.get("localDate"));
+			ev.setOra((String)currentCont.get("localTime"));
+			ev.setGenere((String)currentCont.get("genre"));
+			
+			eventi.add(ev);
+		}
+		
+		st.setEvento(eventi);
+		return st;
+	}
+	
+//	@Override 
+	public JSONObject toJSON(Stato stato) {
+		JSONObject output=new JSONObject();
+		
+		output.put("name", stato.getNome());
+//		output.put("stateCode", stato.getStateCode());
+		
+		JSONArray listaEventi=new JSONArray();
+	
+		for(Evento ev:stato.getEvento()) {
+			JSONObject Ev=new JSONObject();
+			
+			Ev.put("name", ev.getNome());
+			Ev.put("url", ev.getUrl());
+			Ev.put("city", ev.getCitta());
+			Ev.put("localDate", ev.getDate());
+			Ev.put("localTime", ev.getOra());
+			Ev.put("genre", ev.getGenere());
+			
+			listaEventi.add(Ev);
+		}
+		
+		output.put("events", listaEventi);
+		JSONObject main=new JSONObject();
+		return output;
+	}
+
+	
+//	@Override
+//	public JSONArray getEventofromApi(String stato) {
+//		JSONObject object=getEventbyState(stato);
+//		JSONArray Evento = new JSONArray();
+//		JSONArray embedded=(JSONArray)object.get("embedded");
+//		
+//		JSONArray listaEvento= (JSONArray)object.get("events");
+//		
+//		JSONObject current;
+//		String name;
+//		String url;
+//		String city;
+//		LocalDate localDate;
+//		String localTime;
+//		String genre;
+//		
+//		for (int i = 0; i<listaEvento.size(); i++) {
+//			
+//			current =(JSONObject) listaEvento.get(i);
+//			name = (String) current.get("name");
+//			url = (String) current.get("url");
+//			city=(String) current.get("city");
+//			localDate=(LocalDate) current.get("localDate");
+//			localTime=(String) current.get("localTime");
+//			genre=(String) current.get("genre");
+//			
+//			JSONObject ev = new JSONObject();
+//			ev.put("name", name);
+//			ev.put("url", url);
+//			ev.put("city", city);
+//			ev.put("localDate", localDate);
+//			ev.put("localTime", localTime);
+//			ev.put("genre", genre);
+//
+//			Evento.add(ev);
+//		}
+//	return Evento;
+//		
+//	}
+	
+	
+}

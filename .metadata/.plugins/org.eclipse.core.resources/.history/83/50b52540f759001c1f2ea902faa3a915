@@ -1,0 +1,125 @@
+package it.univpm.ProgettoEsame.service;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.MalformedURLException;
+import java.net.URI;
+import java.net.URL;
+import java.net.URLConnection;
+import java.time.LocalDate;
+import java.util.Vector;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
+import org.springframework.stereotype.Service;
+
+import it.univpm.ProgettoEsame.model.Evento;
+import it.univpm.ProgettoEsame.model.Stato;
+
+@Service
+public class TicketmasterServiceImpl implements TicketmasterService {
+
+	private String apikey="gcbb5hGg46qKGJTo1XeuoIY1AK7AgFiL";
+	private String url="https://app.ticketmaster.com/discovery/v2/events.json?countryCode=US?state=";
+	
+	@Override
+	public JSONObject getJSONEvento(String stato) {
+		
+		JSONObject evento=null;
+	
+
+		try {
+			URL u = new URL(this.url+stato+"&apikey"+apikey);
+
+			URLConnection openConnection=u.openConnection();
+			InputStream input=openConnection.getInputStream();
+		
+			String dati="";
+			String line="";
+			try {
+				InputStreamReader inReader=new InputStreamReader(input);
+				BufferedReader buffer=new BufferedReader(inReader);
+				
+				while((line=buffer.readLine())!=null){
+					dati+=line;
+				}
+			}finally {
+				input.close();
+			}
+				evento=(JSONObject) JSONValue.parseWithException(dati);
+				
+		}catch(IOException e) {
+			e.printStackTrace();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+		return evento;
+			
+	}
+	
+	@Override
+	public Stato getEvento(JSONObject obj) {
+		
+		Stato st=new Stato();
+		Vector<Evento>eventi=new Vector<Evento>();
+		
+		JSONObject stateData=(JSONObject)obj.get("state");
+		JSONObject events=(JSONObject)obj.get("events");
+		
+		st.setNome((String)stateData.get("name"));
+		st.setStateCode((String)stateData.get("stateCode"));
+		
+		for(int i=0;i<events.size();i++) {
+			
+			JSONObject currentCont=(JSONObject) events.get(i);
+			Evento ev=new Evento();
+			
+			ev.setNome((String)currentCont.get("name"));
+			ev.setUrl((String)currentCont.get("url"));
+			ev.setCitta((String)currentCont.get("city"));
+			ev.setDate((LocalDate) currentCont.get("localDate"));
+			ev.setOra((String)currentCont.get("localTime"));
+			ev.setGenere((String)currentCont.get("genre"));
+			
+			eventi.add(ev);
+		}
+		
+		st.setEvento(eventi);
+		return st;
+	}
+	
+	@Override 
+	public JSONObject toJSON(Stato stato) {
+		JSONObject obj=new JSONObject();
+		
+		obj.put("name", stato.getNome());
+		obj.put("stateCode", stato.getStateCode());
+		
+		JSONArray listaEventi=new JSONArray();
+	
+		for(Evento ev:stato.getEvento()) {
+			JSONObject Ev=new JSONObject();
+			
+			Ev.put("name", ev.getNome());
+			Ev.put("url", ev.getUrl());
+			Ev.put("city", ev.getCitta());
+			Ev.put("localDate", ev.getDate());
+			Ev.put("localTime", ev.getOra());
+			Ev.put("genre", ev.getGenere());
+			
+			listaEventi.add(Ev);
+		}
+		
+		obj.put("events", listaEventi);
+		return obj;
+	}
+	
+	
+}

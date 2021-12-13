@@ -1,0 +1,23 @@
+package it.univpm.ProgettoEsame.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import it.univpm.ProgettoEsame.model.Eventi;
+import it.univpm.ProgettoEsame.service.TicketmasterService;
+
+@RestController
+public class TestTicketmasterController {
+	
+	@Autowired
+	private TicketmasterService ticketmasterservice;
+	
+	
+
+	@GetMapping(value="/getStato")
+	public Eventi method() {
+		public ResponseEntity<Object>getStato();
+	}
+	
+}

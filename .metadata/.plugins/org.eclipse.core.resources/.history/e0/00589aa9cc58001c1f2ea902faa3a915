@@ -1,0 +1,5 @@
+package it.univpm.ProgettoEsame.models;
+
+public class Eventi {
+
+}

@@ -1,0 +1,66 @@
+package it.univpm.ProgettoEsame.service;
+
+import java.io.BufferedReader;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.URI;
+import java.net.URLConnection;
+import java.util.Vector;
+
+import org.json.simple.JSONObject;
+import org.json.simple.JSONValue;
+
+import it.univpm.ProgettoEsame.model.Evento;
+import it.univpm.ProgettoEsame.model.Stato;
+
+
+public class TicketmasterServiceImpl implements TicketmasterService {
+
+	private String apikey="gcbb5hGg46qKGJTo1XeuoIY1AK7AgFiL";
+	private String URL="https://app.ticketmaster.com/discovery/v2/events.json?countryCode=US?state=";
+	
+	@Override
+	public JSONObject getJSONEvento(String stato) {
+		
+		JSONObject evento;
+
+		URLConnection openConnection=new URL(this.URL+stato+"&apikey"+apikey).openConnection();
+		InputStream input=openConnection.getInputStream();
+	
+		String dati="";
+		String line="";
+		
+		InputStreamReader inReader=new InputStreamReader(input);
+		BufferedReader buffer=new BufferedReader(inReader);
+		
+		while((line=buffer.readLine())!=null){
+			dati+=line;
+		}
+		evento=(JSONObject) JSONValue.parseWithException(dati);
+		
+		return evento;
+			
+	}
+	
+	@Override
+	public Stato getEvento(JSONObject obj) {
+		
+		Stato st=new Stato();
+		Vector<Evento>eventi=new Vector<Evento>();
+		
+		JSONObject stateData=(JSONObject)obj.get("state");
+		JSONObject events=(JSONObject)obj.get("events");
+		
+		st.setNome((String)stateData.get("name"));
+		st.setStateCode((String)stateData.get("stateCode"));
+		
+		for(int i=0;i<events.size();i++) {
+			
+			Evento ev=new Evento();
+		}
+		
+
+		
+		
+	}
+}

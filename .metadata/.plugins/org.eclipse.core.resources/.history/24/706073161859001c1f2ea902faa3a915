@@ -1,0 +1,5 @@
+package it.univpm.ProgettoEsame.model;
+
+public class Stato {
+
+}

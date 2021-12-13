@@ -1,0 +1,17 @@
+package it.univpm.ProgettoEsame.service;
+
+import org.json.simple.JSONObject;
+
+public class TicketmasterServiceImpl implements TicketmasterService {
+
+	private String apikey="gcbb5hGg46qKGJTo1XeuoIY1AK7AgFiL";
+	private String URL="https://app.ticketmaster.com/discovery/v2/events.json?countryCode=US&apikey="+apikey;
+	
+	@Override
+	public JSONObject getJSONEvento(String stato) {
+		
+	}
+	
+	
+	
+}
