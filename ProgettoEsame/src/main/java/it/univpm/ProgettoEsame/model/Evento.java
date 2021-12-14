@@ -9,14 +9,16 @@ public class Evento {
 	private LocalDate date;
 	private String ora;
 	private String genere;
-	
-	public Evento(String nome, String url, String citta, LocalDate date, String ora, String genere,String stato) {
+    private String stato;	
+    
+	public Evento(String nome, String url, String citta, LocalDate date, String ora, String genere, String stato) {
 		this.nome = nome;
 		this.url = url;
 		this.citta = citta;
 		this.date = date;
 		this.ora = ora;
 		this.genere = genere;
+		this.stato= stato;
 	}
 
 	public Evento() {};
@@ -67,6 +69,14 @@ public class Evento {
 
 	public void setGenere(String genere) {
 		this.genere = genere;
+	}
+	
+	public String getStato() {
+		return stato;
+	}
+
+	public void setStato(String stato) {
+		this.stato = stato;
 	}
 
 	public String toString() {
