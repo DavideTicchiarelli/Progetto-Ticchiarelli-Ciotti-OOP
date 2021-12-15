@@ -1,0 +1,30 @@
+package it.univpm.ProgettoEsame.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import it.univpm.ProgettoEsame.model.Evento;
+import it.univpm.ProgettoEsame.service.TicketmasterService;
+import it.univpm.ProgettoEsame.service.TicketmasterServiceImpl;
+
+@RestController
+public class TestTicketmasterController {
+	
+	@Autowired
+	private TicketmasterServiceImpl ticketmasterservice;
+	
+	@GetMapping(value="/getStato")
+	public ResponseEntity<Object>getStato(@RequestParam(name="stateCode",defaultValue="AZ")String stateCode){
+		return new ResponseEntity<>(ticketmasterservice.getStatoAPI(stateCode).toString(),HttpStatus.OK);
+	}
+    
+	@GetMapping(value="/getEvento")
+	public ResponseEntity<Object> getEventobyStato(@RequestParam(name="stateCode",defaultValue="AZ") String stateCode) {
+			return new ResponseEntity<>(ticketmasterservice.getStatoEvents(stateCode).toString(),HttpStatus.OK);
+    }
+}

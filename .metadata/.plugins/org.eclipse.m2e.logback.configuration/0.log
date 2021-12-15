@@ -843,3 +843,768 @@
 2021-12-14 17:37:01,782 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2021-12-14 17:37:01,782 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2021-12-14 17:37:01,782 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\david\OneDrive\Desktop\gitLocale\ProgettoEsame\src\test\resources
+2021-12-14 18:07:21,326 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-12-14 18:07:24,403 [Worker-9: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: it.univpm:ProgettoEsame:0.0.1-SNAPSHOT @ /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/pom.xml.
+2021-12-14 18:07:25,838 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-14 18:07:25,838 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-14 18:07:25,844 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-14 18:07:25,913 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-14 18:07:25,918 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-14 18:07:25,918 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-14 18:07:25,919 [Worker-9: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-14 18:07:27,821 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-14 18:07:27,821 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-14 18:07:27,824 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-14 18:07:27,827 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-14 18:07:27,829 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-14 18:07:27,829 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-14 18:07:27,829 [Worker-10: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-14 18:08:13,289 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-14 18:08:13,290 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-14 18:08:13,290 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-14 18:08:13,320 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-14 18:08:13,324 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-14 18:08:13,324 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-14 18:08:13,324 [Worker-16: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-14 18:08:18,460 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-14 18:08:18,460 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-14 18:08:18,461 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-14 18:08:18,465 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-14 18:08:18,470 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-14 18:08:18,470 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-14 18:08:18,471 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 13:32:47,496 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 13:32:47,497 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 13:32:47,499 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 13:32:47,913 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 13:32:47,920 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 13:32:47,921 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 13:32:47,921 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 13:37:15,620 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 13:37:15,621 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 13:37:15,623 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 13:37:15,689 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 13:37:15,697 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 13:37:15,697 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 13:37:15,697 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 13:59:54,578 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 13:59:54,580 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 13:59:54,581 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 13:59:54,622 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 13:59:54,626 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 13:59:54,626 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 13:59:54,626 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 14:00:41,741 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:00:41,742 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:00:41,743 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 14:00:41,762 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 14:00:41,765 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:00:41,765 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:00:41,765 [Worker-59: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 14:01:02,050 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:01:02,050 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:01:02,051 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 14:01:02,342 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 14:01:02,344 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:01:02,344 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:01:02,344 [Worker-60: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 14:02:29,958 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:02:29,960 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:02:29,960 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 14:02:29,983 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 14:02:29,986 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:02:29,986 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:02:29,986 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 14:24:18,614 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:24:18,615 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:24:18,616 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 14:24:18,689 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 14:24:18,693 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:24:18,693 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:24:18,693 [Worker-62: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 14:26:18,251 [Worker-67: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:26:18,252 [Worker-67: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:26:18,253 [Worker-67: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 14:26:18,319 [Worker-67: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 14:26:18,342 [Worker-67: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:26:18,343 [Worker-67: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:26:18,343 [Worker-67: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 14:26:51,367 [Worker-66: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:26:51,367 [Worker-66: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:26:51,370 [Worker-66: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 14:26:51,835 [Worker-66: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 14:26:51,839 [Worker-66: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:26:51,839 [Worker-66: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:26:51,839 [Worker-66: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 14:30:33,703 [Worker-63: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:30:33,704 [Worker-63: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:30:33,704 [Worker-63: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 14:30:33,745 [Worker-63: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 14:30:33,747 [Worker-63: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:30:33,747 [Worker-63: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:30:33,747 [Worker-63: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 14:31:07,187 [Worker-66: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:31:07,188 [Worker-66: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:31:07,189 [Worker-66: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 14:31:07,224 [Worker-66: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 14:31:07,227 [Worker-66: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:31:07,227 [Worker-66: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:31:07,227 [Worker-66: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 14:31:37,504 [Worker-62: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:31:37,505 [Worker-62: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:31:37,506 [Worker-62: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 14:31:37,513 [Worker-62: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 14:31:37,519 [Worker-62: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:31:37,519 [Worker-62: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:31:37,519 [Worker-62: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 14:32:32,483 [Worker-67: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:32:32,484 [Worker-67: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:32:32,485 [Worker-67: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 14:32:32,493 [Worker-67: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 14:32:32,496 [Worker-67: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:32:32,496 [Worker-67: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:32:32,496 [Worker-67: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 14:32:54,454 [Worker-68: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:32:54,455 [Worker-68: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:32:54,455 [Worker-68: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 14:32:54,539 [Worker-68: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 14:32:54,541 [Worker-68: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:32:54,541 [Worker-68: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:32:54,541 [Worker-68: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 14:36:22,890 [Worker-67: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:36:22,891 [Worker-67: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:36:22,892 [Worker-67: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 14:36:22,914 [Worker-67: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 14:36:22,916 [Worker-67: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:36:22,916 [Worker-67: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:36:22,916 [Worker-67: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 14:39:15,363 [Worker-72: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:39:15,364 [Worker-72: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:39:15,365 [Worker-72: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 14:39:15,402 [Worker-72: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 14:39:15,405 [Worker-72: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:39:15,405 [Worker-72: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:39:15,405 [Worker-72: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 14:42:18,607 [Worker-78: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:42:18,609 [Worker-78: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:42:18,610 [Worker-78: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 14:42:18,632 [Worker-78: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 14:42:18,636 [Worker-78: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:42:18,636 [Worker-78: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:42:18,636 [Worker-78: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 14:50:02,587 [Worker-80: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:50:02,589 [Worker-80: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:50:02,590 [Worker-80: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 14:50:02,632 [Worker-80: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 14:50:02,636 [Worker-80: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:50:02,636 [Worker-80: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:50:02,636 [Worker-80: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 14:51:47,987 [Worker-82: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:51:47,988 [Worker-82: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:51:47,989 [Worker-82: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 14:51:48,029 [Worker-82: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 14:51:48,032 [Worker-82: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:51:48,032 [Worker-82: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:51:48,032 [Worker-82: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 14:52:07,387 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:52:07,387 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:52:07,388 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 14:52:07,419 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 14:52:07,421 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:52:07,422 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:52:07,422 [Worker-80: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 14:54:44,641 [Worker-85: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:54:44,642 [Worker-85: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:54:44,642 [Worker-85: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 14:54:44,667 [Worker-85: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 14:54:44,669 [Worker-85: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:54:44,669 [Worker-85: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:54:44,669 [Worker-85: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 14:59:20,245 [Worker-84: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:59:20,246 [Worker-84: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:59:20,247 [Worker-84: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 14:59:20,432 [Worker-84: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 14:59:20,437 [Worker-84: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:59:20,438 [Worker-84: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:59:20,438 [Worker-84: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 14:59:29,367 [Worker-92: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:59:29,368 [Worker-92: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:59:29,369 [Worker-92: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 14:59:29,406 [Worker-92: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 14:59:29,410 [Worker-92: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 14:59:29,410 [Worker-92: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 14:59:29,410 [Worker-92: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 15:00:31,057 [Worker-85: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:00:31,058 [Worker-85: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:00:31,058 [Worker-85: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 15:00:31,130 [Worker-85: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 15:00:31,135 [Worker-85: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:00:31,135 [Worker-85: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:00:31,135 [Worker-85: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 15:01:43,014 [Worker-91: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:01:43,016 [Worker-91: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:01:43,016 [Worker-91: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 15:01:43,050 [Worker-91: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 15:01:43,052 [Worker-91: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:01:43,053 [Worker-91: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:01:43,053 [Worker-91: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 15:02:04,517 [Worker-91: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:02:04,518 [Worker-91: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:02:04,518 [Worker-91: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 15:02:04,545 [Worker-91: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 15:02:04,547 [Worker-91: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:02:04,547 [Worker-91: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:02:04,547 [Worker-91: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 15:02:54,925 [Worker-86: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:02:54,927 [Worker-86: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:02:54,928 [Worker-86: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 15:02:54,958 [Worker-86: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 15:02:54,960 [Worker-86: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:02:54,960 [Worker-86: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:02:54,961 [Worker-86: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 15:03:20,831 [Worker-93: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:03:20,831 [Worker-93: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:03:20,833 [Worker-93: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 15:03:20,875 [Worker-93: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 15:03:20,879 [Worker-93: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:03:20,880 [Worker-93: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:03:20,880 [Worker-93: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 15:14:12,495 [Worker-89: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:14:12,498 [Worker-89: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:14:12,500 [Worker-89: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 15:14:12,589 [Worker-89: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 15:14:12,592 [Worker-89: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:14:12,592 [Worker-89: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:14:12,592 [Worker-89: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 15:24:32,430 [Worker-95: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:24:32,432 [Worker-95: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:24:32,432 [Worker-95: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 15:24:32,498 [Worker-95: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 15:24:32,508 [Worker-95: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:24:32,509 [Worker-95: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:24:32,509 [Worker-95: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 15:26:03,647 [Worker-98: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:26:03,648 [Worker-98: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:26:03,649 [Worker-98: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 15:26:03,701 [Worker-98: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 15:26:03,704 [Worker-98: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:26:03,705 [Worker-98: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:26:03,705 [Worker-98: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 15:27:35,753 [Worker-101: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:27:35,755 [Worker-101: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:27:35,755 [Worker-101: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 15:27:35,813 [Worker-101: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 15:27:35,815 [Worker-101: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:27:35,815 [Worker-101: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:27:35,815 [Worker-101: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 15:29:25,270 [Worker-95: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:29:25,271 [Worker-95: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:29:25,272 [Worker-95: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 15:29:25,300 [Worker-95: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 15:29:25,302 [Worker-95: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:29:25,302 [Worker-95: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:29:25,302 [Worker-95: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 15:33:38,743 [Worker-109: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:33:38,744 [Worker-109: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:33:38,750 [Worker-109: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 15:33:38,821 [Worker-109: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 15:33:38,824 [Worker-109: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:33:38,824 [Worker-109: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:33:38,825 [Worker-109: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 15:37:42,037 [Worker-116: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:37:42,039 [Worker-116: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:37:42,040 [Worker-116: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 15:37:42,085 [Worker-116: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 15:37:42,093 [Worker-116: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:37:42,093 [Worker-116: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:37:42,093 [Worker-116: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 15:37:59,277 [Worker-112: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:37:59,278 [Worker-112: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:37:59,279 [Worker-112: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 15:37:59,311 [Worker-112: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 15:37:59,315 [Worker-112: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:37:59,315 [Worker-112: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:37:59,315 [Worker-112: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 15:38:24,989 [Worker-117: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:38:24,990 [Worker-117: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:38:24,990 [Worker-117: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 15:38:25,035 [Worker-117: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 15:38:25,038 [Worker-117: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:38:25,038 [Worker-117: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:38:25,038 [Worker-117: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 15:46:26,306 [Worker-121: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:46:26,307 [Worker-121: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:46:26,310 [Worker-121: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 15:46:26,368 [Worker-121: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 15:46:26,371 [Worker-121: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 15:46:26,371 [Worker-121: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 15:46:26,371 [Worker-121: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 16:06:56,821 [Worker-119: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 16:06:56,823 [Worker-119: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 16:06:56,824 [Worker-119: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 16:06:56,959 [Worker-119: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 16:06:56,962 [Worker-119: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 16:06:56,962 [Worker-119: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 16:06:56,963 [Worker-119: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 17:15:33,403 [Worker-141: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 17:15:33,405 [Worker-141: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 17:15:33,406 [Worker-141: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 17:15:33,685 [Worker-141: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 17:15:33,687 [Worker-141: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 17:15:33,688 [Worker-141: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 17:15:33,688 [Worker-141: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 17:16:18,758 [Worker-124: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 17:16:18,760 [Worker-124: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 17:16:18,761 [Worker-124: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 17:16:18,957 [Worker-124: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 17:16:18,959 [Worker-124: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 17:16:18,960 [Worker-124: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 17:16:18,960 [Worker-124: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 17:18:37,658 [Worker-140: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 17:18:37,658 [Worker-140: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 17:18:37,659 [Worker-140: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 17:18:37,697 [Worker-140: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 17:18:37,700 [Worker-140: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 17:18:37,700 [Worker-140: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 17:18:37,700 [Worker-140: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 17:20:40,524 [Worker-144: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 17:20:40,525 [Worker-144: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 17:20:40,526 [Worker-144: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 17:20:40,552 [Worker-144: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 17:20:40,555 [Worker-144: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 17:20:40,555 [Worker-144: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 17:20:40,555 [Worker-144: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 17:21:01,836 [Worker-144: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 17:21:01,836 [Worker-144: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 17:21:01,836 [Worker-144: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 17:21:01,917 [Worker-144: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 17:21:01,918 [Worker-144: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 17:21:01,918 [Worker-144: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 17:21:01,918 [Worker-144: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 17:54:26,322 [Worker-163: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 17:54:26,324 [Worker-163: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 17:54:26,326 [Worker-163: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 17:54:26,425 [Worker-163: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 17:54:26,429 [Worker-163: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 17:54:26,429 [Worker-163: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 17:54:26,429 [Worker-163: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:00:32,351 [Worker-169: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:00:32,352 [Worker-169: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:00:32,353 [Worker-169: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:00:32,531 [Worker-169: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:00:32,533 [Worker-169: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:00:32,533 [Worker-169: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:00:32,534 [Worker-169: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:04:23,130 [Worker-177: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:04:23,131 [Worker-177: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:04:23,132 [Worker-177: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:04:23,351 [Worker-177: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:04:23,360 [Worker-177: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:04:23,360 [Worker-177: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:04:23,360 [Worker-177: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:06:49,409 [Worker-182: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:06:49,416 [Worker-182: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:06:49,417 [Worker-182: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:06:49,546 [Worker-182: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:06:49,550 [Worker-182: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:06:49,551 [Worker-182: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:06:49,551 [Worker-182: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:07:03,711 [Worker-183: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:07:03,712 [Worker-183: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:07:03,713 [Worker-183: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:07:03,817 [Worker-183: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:07:03,822 [Worker-183: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:07:03,822 [Worker-183: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:07:03,823 [Worker-183: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:07:42,524 [Worker-182: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:07:42,524 [Worker-182: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:07:42,525 [Worker-182: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:07:42,678 [Worker-182: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:07:42,682 [Worker-182: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:07:42,682 [Worker-182: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:07:42,682 [Worker-182: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:08:16,725 [Worker-180: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:08:16,726 [Worker-180: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:08:16,726 [Worker-180: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:08:16,811 [Worker-180: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:08:16,814 [Worker-180: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:08:16,815 [Worker-180: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:08:16,815 [Worker-180: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:08:47,875 [Worker-173: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:08:47,875 [Worker-173: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:08:47,876 [Worker-173: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:08:47,902 [Worker-173: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:08:47,906 [Worker-173: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:08:47,906 [Worker-173: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:08:47,906 [Worker-173: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:17:49,678 [Worker-176: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:17:49,680 [Worker-176: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:17:49,681 [Worker-176: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:17:49,778 [Worker-176: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:17:49,781 [Worker-176: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:17:49,781 [Worker-176: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:17:49,781 [Worker-176: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:18:50,633 [Worker-187: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:18:50,635 [Worker-187: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:18:50,636 [Worker-187: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:18:50,691 [Worker-187: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:18:50,693 [Worker-187: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:18:50,693 [Worker-187: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:18:50,693 [Worker-187: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:26:43,367 [Worker-191: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:26:43,368 [Worker-191: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:26:43,368 [Worker-191: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:26:43,489 [Worker-191: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:26:43,493 [Worker-191: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:26:43,493 [Worker-191: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:26:43,494 [Worker-191: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:29:20,313 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:29:20,314 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:29:20,315 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:29:20,343 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:29:20,344 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:29:20,345 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:29:20,345 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:38:12,700 [Worker-196: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:38:12,701 [Worker-196: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:38:12,702 [Worker-196: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:38:12,810 [Worker-196: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:38:12,813 [Worker-196: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:38:12,813 [Worker-196: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:38:12,813 [Worker-196: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:42:27,450 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:42:27,456 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:42:27,458 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:42:27,631 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:42:27,633 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:42:27,633 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:42:27,633 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:46:48,567 [Worker-193: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:46:48,568 [Worker-193: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:46:48,568 [Worker-193: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:46:48,595 [Worker-193: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:46:48,596 [Worker-193: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:46:48,597 [Worker-193: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:46:48,597 [Worker-193: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:49:25,232 [Worker-199: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:49:25,233 [Worker-199: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:49:25,234 [Worker-199: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:49:25,294 [Worker-199: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:49:25,299 [Worker-199: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:49:25,299 [Worker-199: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:49:25,299 [Worker-199: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:50:00,238 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:50:00,239 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:50:00,239 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:50:00,300 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:50:00,302 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:50:00,302 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:50:00,302 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:50:21,290 [Worker-194: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:50:21,291 [Worker-194: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:50:21,292 [Worker-194: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:50:21,423 [Worker-194: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:50:21,601 [Worker-194: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:50:21,601 [Worker-194: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:50:21,601 [Worker-194: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:51:00,041 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:51:00,043 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:51:00,044 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:51:00,079 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:51:00,081 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:51:00,081 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:51:00,081 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:51:07,216 [Worker-193: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:51:07,216 [Worker-193: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:51:07,216 [Worker-193: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:51:07,238 [Worker-193: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:51:07,241 [Worker-193: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:51:07,241 [Worker-193: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:51:07,241 [Worker-193: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:52:19,738 [Worker-203: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:52:19,739 [Worker-203: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:52:19,739 [Worker-203: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:52:19,782 [Worker-203: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:52:19,784 [Worker-203: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:52:19,784 [Worker-203: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:52:19,784 [Worker-203: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:53:08,093 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:53:08,098 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:53:08,100 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:53:08,390 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:53:08,402 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:53:08,402 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:53:08,402 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:53:42,417 [Worker-200: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:53:42,417 [Worker-200: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:53:42,418 [Worker-200: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:53:42,460 [Worker-200: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:53:42,464 [Worker-200: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:53:42,464 [Worker-200: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:53:42,464 [Worker-200: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:54:12,678 [Worker-197: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:54:12,678 [Worker-197: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:54:12,678 [Worker-197: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:54:12,713 [Worker-197: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:54:12,715 [Worker-197: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:54:12,715 [Worker-197: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:54:12,715 [Worker-197: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:54:50,676 [Worker-202: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:54:50,677 [Worker-202: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:54:50,677 [Worker-202: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:54:50,782 [Worker-202: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:54:50,784 [Worker-202: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:54:50,784 [Worker-202: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:54:50,785 [Worker-202: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:55:30,406 [Worker-200: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:55:30,406 [Worker-200: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:55:30,407 [Worker-200: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:55:30,439 [Worker-200: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:55:30,441 [Worker-200: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:55:30,441 [Worker-200: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:55:30,441 [Worker-200: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:56:11,593 [Worker-197: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:56:11,594 [Worker-197: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:56:11,597 [Worker-197: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:56:11,664 [Worker-197: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:56:11,670 [Worker-197: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:56:11,670 [Worker-197: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:56:11,670 [Worker-197: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:56:19,907 [Worker-200: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:56:19,908 [Worker-200: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:56:19,909 [Worker-200: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:56:19,945 [Worker-200: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:56:19,947 [Worker-200: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:56:19,947 [Worker-200: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:56:19,947 [Worker-200: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:56:41,467 [Worker-188: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:56:41,468 [Worker-188: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:56:41,468 [Worker-188: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:56:41,489 [Worker-188: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:56:41,491 [Worker-188: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:56:41,491 [Worker-188: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:56:41,491 [Worker-188: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:57:55,248 [Worker-197: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:57:55,249 [Worker-197: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:57:55,249 [Worker-197: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:57:55,266 [Worker-197: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:57:55,268 [Worker-197: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:57:55,268 [Worker-197: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:57:55,268 [Worker-197: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 18:58:39,077 [Worker-194: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:58:39,078 [Worker-194: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:58:39,079 [Worker-194: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 18:58:39,179 [Worker-194: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 18:58:39,182 [Worker-194: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 18:58:39,182 [Worker-194: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 18:58:39,182 [Worker-194: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:01:18,255 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:01:18,258 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:01:18,259 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:01:18,342 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:01:18,346 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:01:18,346 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:01:18,346 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:02:04,531 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:02:04,532 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:02:04,532 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:02:04,561 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:02:04,563 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:02:04,563 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:02:04,563 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:03:37,288 [Worker-209: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:03:37,290 [Worker-209: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:03:37,291 [Worker-209: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:03:37,328 [Worker-209: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:03:37,332 [Worker-209: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:03:37,332 [Worker-209: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:03:37,332 [Worker-209: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:05:24,196 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:05:24,197 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:05:24,197 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:05:24,222 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:05:24,223 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:05:24,223 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:05:24,223 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:06:10,845 [Worker-199: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:06:10,846 [Worker-199: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:06:10,846 [Worker-199: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:06:10,872 [Worker-199: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:06:10,874 [Worker-199: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:06:10,874 [Worker-199: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:06:10,874 [Worker-199: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:06:44,528 [Worker-208: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:06:44,529 [Worker-208: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:06:44,529 [Worker-208: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:06:44,587 [Worker-208: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:06:44,588 [Worker-208: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:06:44,588 [Worker-208: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:06:44,588 [Worker-208: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:08:25,889 [Worker-207: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:08:25,890 [Worker-207: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:08:25,890 [Worker-207: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:08:26,006 [Worker-207: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:08:26,008 [Worker-207: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:08:26,008 [Worker-207: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:08:26,009 [Worker-207: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:12:51,839 [Worker-205: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:12:51,839 [Worker-205: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:12:51,840 [Worker-205: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:12:51,910 [Worker-205: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:12:51,912 [Worker-205: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:12:51,913 [Worker-205: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:12:51,913 [Worker-205: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:13:29,192 [Worker-200: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:13:29,193 [Worker-200: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:13:29,193 [Worker-200: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:13:29,238 [Worker-200: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:13:29,240 [Worker-200: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:13:29,240 [Worker-200: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:13:29,240 [Worker-200: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:15:08,825 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:15:08,826 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:15:08,827 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:15:08,852 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:15:08,855 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:15:08,855 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:15:08,855 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:15:33,336 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:15:33,337 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:15:33,337 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:15:33,361 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:15:33,362 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:15:33,362 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:15:33,362 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:15:54,443 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:15:54,446 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:15:54,448 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:15:54,474 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:15:54,476 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:15:54,476 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:15:54,476 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:16:47,199 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:16:47,200 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:16:47,200 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:16:47,277 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:16:47,281 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:16:47,281 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:16:47,281 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:17:10,254 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:17:10,255 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:17:10,256 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:17:10,282 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:17:10,283 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:17:10,284 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:17:10,284 [Worker-204: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:18:56,404 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:18:56,406 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:18:56,407 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:18:56,429 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:18:56,432 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:18:56,432 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:18:56,432 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:19:41,226 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:19:41,227 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:19:41,227 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:19:41,249 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:19:41,252 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:19:41,252 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:19:41,252 [Worker-192: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:20:38,683 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:20:38,684 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:20:38,685 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:20:38,713 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:20:38,716 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:20:38,716 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:20:38,716 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:21:10,587 [Worker-210: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:21:10,588 [Worker-210: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:21:10,588 [Worker-210: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:21:10,637 [Worker-210: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:21:10,640 [Worker-210: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:21:10,641 [Worker-210: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:21:10,641 [Worker-210: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:22:13,760 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:22:13,761 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:22:13,762 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:22:13,785 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:22:13,788 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:22:13,788 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:22:13,788 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:22:37,952 [Worker-207: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:22:37,952 [Worker-207: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:22:37,953 [Worker-207: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:22:37,967 [Worker-207: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:22:37,969 [Worker-207: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:22:37,969 [Worker-207: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:22:37,969 [Worker-207: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:24:19,269 [Worker-209: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:24:19,270 [Worker-209: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:24:19,271 [Worker-209: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:24:19,314 [Worker-209: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:24:19,317 [Worker-209: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:24:19,317 [Worker-209: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:24:19,317 [Worker-209: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:24:37,725 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:24:37,725 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:24:37,725 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:24:37,745 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:24:37,747 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:24:37,748 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:24:37,748 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:24:59,068 [Worker-207: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:24:59,068 [Worker-207: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:24:59,068 [Worker-207: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:24:59,090 [Worker-207: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:24:59,092 [Worker-207: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:24:59,092 [Worker-207: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:24:59,092 [Worker-207: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:25:33,071 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:25:33,072 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:25:33,072 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:25:33,115 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:25:33,117 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:25:33,117 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:25:33,117 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:26:07,845 [Worker-210: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:26:07,846 [Worker-210: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:26:07,846 [Worker-210: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:26:07,872 [Worker-210: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:26:07,875 [Worker-210: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:26:07,875 [Worker-210: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:26:07,875 [Worker-210: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:26:33,558 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:26:33,558 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:26:33,558 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:26:33,581 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:26:33,583 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:26:33,584 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:26:33,584 [Worker-195: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:31:36,061 [Worker-207: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:31:36,063 [Worker-207: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:31:36,064 [Worker-207: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:31:36,103 [Worker-207: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:31:36,105 [Worker-207: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:31:36,105 [Worker-207: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:31:36,105 [Worker-207: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:31:58,259 [Worker-216: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:31:58,260 [Worker-216: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:31:58,260 [Worker-216: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:31:58,280 [Worker-216: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:31:58,282 [Worker-216: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:31:58,282 [Worker-216: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:31:58,282 [Worker-216: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:32:35,016 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:32:35,017 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:32:35,018 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:32:35,100 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:32:35,107 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:32:35,107 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:32:35,107 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources
+2021-12-15 19:33:03,786 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:33:03,786 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:33:03,786 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-12-15 19:33:03,826 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-12-15 19:33:03,828 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-12-15 19:33:03,828 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-12-15 19:33:03,829 [Worker-205: Launching ProgettoEsame - ProgettoEsameApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/nicco_ciotti/Desktop/OOPesame/ProgettoEsame/src/test/resources

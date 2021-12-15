@@ -13,7 +13,7 @@ public class StateFilter {
 		
 		for (Evento ev : eventiDaFiltrare) {
 			
-			if(stato.equals(ev.getStato()))
+//			if(stato.equals(ev.getStato()))
 				eventiFiltrati.add(ev);
 			
 		}

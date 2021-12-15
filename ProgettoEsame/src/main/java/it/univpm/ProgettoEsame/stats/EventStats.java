@@ -2,20 +2,32 @@ package it.univpm.ProgettoEsame.stats;
 import java.time.LocalDate;
 import java.util.Vector;
 
+import org.json.simple.JSONObject;
+
 import it.univpm.ProgettoEsame.model.Evento;
+import it.univpm.ProgettoEsame.model.Stato;
+import it.univpm.ProgettoEsame.service.TicketmasterServiceImpl;
 
 public class EventStats {
 	
-public int[] numeroEventi(Vector<Evento> listaEventi) {
-		
+	TicketmasterServiceImpl service=new	TicketmasterServiceImpl();
+	
+public JSONObject TotEventi(String stateCode) {
+	
+	Stato st=new Stato(stateCode);
+	st=service.getStatoEvents(stateCode);
+	
+	int contEventi=0;
+	int eventiTot=0;
+	
 		int[] monthsEvents=new int[12];
 		
-		for(int i=0;i<listaEventi.size();i++) {
+		for(int i=0;i<st.getEvento().size();i++) {
 			
 			Evento ev=new Evento();
-			ev=listaEventi.get(i);
+			ev=st.getEvento().get(i);
 			LocalDate mese1=ev.getDate(); 
-
+			
 			for(int j=1;j<=12;j++) {
 				
 				LocalDate mese2=mese1.withMonth(j);
@@ -35,6 +47,14 @@ public int[] numeroEventi(Vector<Evento> listaEventi) {
 				mese2.plusMonths(cont);
 			}
 		}
-		return monthsEvents;
+		for(int i=0;i<monthsEvents.length;i++) {
+			eventiTot+=monthsEvents[i];
+		}
+		
+		JSONObject obj=new JSONObject();
+		
+		obj.put("Totale Eventi in "+st.getNomeStato(), eventiTot);
+		return obj;
+		
 	}
 }

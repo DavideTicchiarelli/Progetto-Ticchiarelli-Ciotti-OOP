@@ -1,0 +1,50 @@
+package it.univpm.ProgettoEsame.service;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
+import it.univpm.ProgettoEsame.model.Stato;
+
+public class ToJSON {
+	
+	Stato stato=new Stato();
+	
+	@SuppressWarnings("unchecked")
+	public JSONObject toJSON(Stato stato) {
+
+		JSONObject obj=new JSONObject();
+
+		obj.put("name", stato.getNomeStato());
+		obj.put("stateCode", stato.getStateCode());
+
+		JSONArray listaEventi=new JSONArray();
+		
+
+		for(int i=0;i<(stato.getEvento().size());i++) {
+
+			JSONObject Ev=new JSONObject();
+
+			Ev.put("name", (stato.getEvento().get(i)).getNome());
+			Ev.put("url", (stato.getEvento().get(i)).getUrl());
+			Ev.put("city", (stato.getEvento().get(i)).getCitta());
+			
+			LocalDate localDate = (stato.getEvento().get(i)).getDate();
+			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+			String formattedString = localDate.format(formatter);
+			
+			Ev.put("localDate", formattedString);
+			Ev.put("localTime", (stato.getEvento().get(i)).getOra());
+			Ev.put("genre", (stato.getEvento().get(i)).getGenere());
+
+			listaEventi.add(Ev);
+		}
+		
+//			String eventi=listaEventi.toJSONString();
+			obj.put("events", listaEventi);
+
+		return obj;
+	}
+}
