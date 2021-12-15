@@ -94,7 +94,7 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 		JSONObject embedded1=(JSONObject)obj.get("_embedded");
 		JSONArray events=(JSONArray)embedded1.get("events");
 
-		Vector<Evento> eventi=new Vector<Evento>();
+		Vector<Evento> eventi=new Vector<Evento>(events.size());
 
 		for(int i=0;i<events.size();i++) {
 
