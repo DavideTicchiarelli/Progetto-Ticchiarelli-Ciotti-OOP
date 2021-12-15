@@ -1,18 +1,15 @@
 package it.univpm.ProgettoEsame.controller;
 
-import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import it.univpm.ProgettoEsame.model.Evento;
-import it.univpm.ProgettoEsame.service.TicketmasterService;
 import it.univpm.ProgettoEsame.service.TicketmasterServiceImpl;
 import it.univpm.ProgettoEsame.stats.EventStats;
+import it.univpm.ProgettoEsame.stats.GenreStats;
 
 @RestController
 public class TestTicketmasterController {
@@ -35,5 +32,14 @@ public class TestTicketmasterController {
 		EventStats stats=new EventStats();
 	
 		return new ResponseEntity<>(stats.TotEventi(stateCode),HttpStatus.OK);
+	}
+	
+	@GetMapping(value="/numGenere")
+	public ResponseEntity<Object>getNumGeneri(@RequestParam(name="stateCode")String stateCode,
+												@RequestParam(name="genre")String genre){
+		GenreStats stats=new GenreStats();
+		
+		return new ResponseEntity<>(stats.GenreEventi(stateCode,genre),HttpStatus.OK);
+	
 	}
 }
