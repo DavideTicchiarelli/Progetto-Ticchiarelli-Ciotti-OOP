@@ -64,69 +64,77 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 			
 	}
 
+	
 	@Override
-	public Stato getEvento(JSONObject obj) {
-		JSONObject jsonObject=(JSONObject)obj;
-
-		Stato st=new Stato();
-		Vector<Evento>eventi=new Vector<Evento>();
+	public Stato getStatoAPI(String stateCode) {
+	JSONObject obj=getJSONEvento(stateCode);	
+	Stato state=new Stato(stateCode);
+	
+	JSONObject embedded=(JSONObject)obj.get("_embedded");
+	JSONArray venues=(JSONArray)embedded.get("venues");
+	JSONObject venuesTemp=(JSONObject)venues.get(0);
+	JSONObject st=(JSONObject)venuesTemp.get("state");
+	String name=(String) st.get("name");
+	String statecode=(String) st.get("stateCode");
+	
+	state.setNomeStato(name);
+	state.setStateCode(statecode);
+	
+	return state;
+	}
+	
+	@Override
+	public Stato getStatoEvents(String stateCode) {
 		
-		JSONObject embedded1=(JSONObject)jsonObject.get("_embedded");
+		JSONObject obj=getJSONEvento(stateCode);
+		Stato st=new Stato(stateCode);
+		st=getStatoAPI(stateCode);
+		
+		JSONObject embedded1=(JSONObject)obj.get("_embedded");
 		JSONArray events=(JSONArray)embedded1.get("events");
 		
-		JSONObject temp=(JSONObject)events.get(0);
-		JSONObject embedded02=(JSONObject)temp.get("_embedded");
-		JSONArray venues02=(JSONArray)embedded02.get("venues");
-		JSONObject tempvenues=(JSONObject)venues02.get(0);
-		JSONObject state=(JSONObject)tempvenues.get("state");
-		JSONObject statename=(JSONObject)state.get("name");
-		
-		st.setNomeStato((String)statename.get("name"));
-		
-//		st.setStateCode((String)stateData.get("stateCode"));
+		Vector<Evento> eventi=new Vector<Evento>(events.size());
 		
 		for(int i=0;i<events.size();i++) {
-			
-			JSONObject currentCont=(JSONObject) events.get(i);
+					
+					
+			JSONObject currentCont=(JSONObject)events.get(i);
 			Evento ev=new Evento();
-			
-
-			
+					
 			ev.setNome((String)currentCont.get("name"));
 			ev.setUrl((String)currentCont.get("url"));
-			
+		
 			JSONObject dates=(JSONObject)currentCont.get("dates");
 			JSONObject start=(JSONObject)dates.get("localDate");
 			ev.setDate((LocalDate) start.get("localDate"));
 			ev.setOra((String)start.get("localTime"));
-			
+					
 			JSONArray classifications=(JSONArray)currentCont.get("classifications");
 			JSONObject classificationsTemp=(JSONObject)currentCont.get(0);
 			JSONObject genre=(JSONObject)classificationsTemp.get("genre");
 			JSONObject nameGenre=(JSONObject)genre.get("name");
-			
 			ev.setGenere((String)nameGenre.get("name"));
-			
+					
 			JSONObject embedded2=(JSONObject)currentCont.get("_embedded");
 			JSONArray venues=(JSONArray)embedded2.get("venues");
 			JSONObject venuesTemp=(JSONObject)venues.get(0);
 			JSONObject namecity=(JSONObject)venuesTemp.get("city");
 			ev.setCitta((String)namecity.get("name"));
-			
+				
 			eventi.add(ev);
-		}
+			}
 		
-	
 		st.setEvento(eventi);
-		
 		return st;
 	}
 	
+
 	@Override 
-	public JSONObject toJSON(Stato stato) {
+	public JSONObject toJSON(Vector<Evento> lista) {
+		getEvento(lista);
 		JSONObject obj=new JSONObject();
 		
-		obj.put("name", stato.getNomeStato());
+		obj.put("name", lista.getNome());
 //		obj.put("stateCode", stato.getStateCode());
 		
 		JSONArray listaEventi=new JSONArray();
