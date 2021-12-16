@@ -1,12 +1,15 @@
 package it.univpm.ProgettoEsame.controller;
 
+import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import it.univpm.ProgettoEsame.model.BodyEventi;
 import it.univpm.ProgettoEsame.service.TicketmasterServiceImpl;
 import it.univpm.ProgettoEsame.stats.EventStats;
 import it.univpm.ProgettoEsame.stats.GenreStats;
@@ -48,6 +51,17 @@ public class TestTicketmasterController {
 	public ResponseEntity<Object>getEventiMensili(@RequestParam(name="stateCode")String stateCode){
 		MinMaxMedia stats=new MinMaxMedia();
 		return new ResponseEntity<>(stats.EventiMensili(stateCode),HttpStatus.OK);
+	}
+	
+	@GetMapping(value="/Eventi")
+	public JSONObject getEventi(@RequestBody BodyEventi eb){
+		
+		JSONObject risultato=new JSONObject();
+		
+		
+		
+		
+		return risultato;
 	}
 	
 }
