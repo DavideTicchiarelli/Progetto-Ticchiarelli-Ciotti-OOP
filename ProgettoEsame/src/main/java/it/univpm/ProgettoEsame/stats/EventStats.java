@@ -17,10 +17,55 @@ public class EventStats {
 
 		Stato st=new Stato(stateCode);
 		st=service.getStatoEvents(stateCode);
-
+//
 		int eventiTot=0;
+//
+//		monthsEvents=new int[12];
+//
+//		for(int i=0;i<st.getEvento().size();i++) {
+//
+//			Evento ev=new Evento();
+//			ev=st.getEvento().get(i);
+//			LocalDate mese1=ev.getDate(); 
+//
+//			for(int j=1;j<=12;j++) {
+//
+//				LocalDate mese2=mese1.withMonth(j);
+//
+//				if(mese1.equals(mese2)) {
+//
+//					int counter=j-1;
+//					monthsEvents[counter]+=1;
+//				} 
+//				else
+//				{					
+//					int counter=j-1;
+//					monthsEvents[counter]+=0;
+//				}
+//
+//				int cont=j+1;
+//				mese2.plusMonths(cont);
+//			}
+//		}
+		
+		MonthsEvents(stateCode);
+		for(int i=0;i<monthsEvents.length;i++) {
+			eventiTot+=monthsEvents[i];
+		}
 
-		monthsEvents=new int[12];
+		JSONObject obj=new JSONObject();
+
+		obj.put("Totale Eventi in "+st.getNomeStato(), eventiTot);
+		return obj;
+
+	}
+
+	public int[] MonthsEvents(String stateCode) {
+		
+		Stato st=new Stato(stateCode);
+		st=service.getStatoEvents(stateCode);
+		
+		int[] monthsEvents=new int[12];
 
 		for(int i=0;i<st.getEvento().size();i++) {
 
@@ -47,21 +92,8 @@ public class EventStats {
 				mese2.plusMonths(cont);
 			}
 		}
-		for(int i=0;i<monthsEvents.length;i++) {
-			eventiTot+=monthsEvents[i];
-		}
-
-		JSONObject obj=new JSONObject();
-
-		obj.put("Totale Eventi in "+st.getNomeStato(), eventiTot);
-		return obj;
-
-	}
-
-	public int[] getMonthsEvents() {
 		return monthsEvents;
-		
 	}
-	
+
 	
 }

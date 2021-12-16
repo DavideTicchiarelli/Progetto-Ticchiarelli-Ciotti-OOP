@@ -64,9 +64,9 @@ public class MinMaxMedia {
 
         EventStats stat=new EventStats();
 
-        min=minEventi(stat.getMonthsEvents());;
-        max=maxEventi(stat.getMonthsEvents());
-        media=mediaEventi(stat.getMonthsEvents());
+        min=minEventi(stat.MonthsEvents(stateCode));;
+        max=maxEventi(stat.MonthsEvents(stateCode));
+        media=mediaEventi(stat.MonthsEvents(stateCode));
 
         JSONObject obj=new JSONObject();
         obj.put("numero minimo di eventi mensili in "+st.getNomeStato(),min);
