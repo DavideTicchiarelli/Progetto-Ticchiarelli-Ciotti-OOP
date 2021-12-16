@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import it.univpm.ProgettoEsame.service.TicketmasterServiceImpl;
 import it.univpm.ProgettoEsame.stats.EventStats;
 import it.univpm.ProgettoEsame.stats.GenreStats;
+import it.univpm.ProgettoEsame.stats.MinMaxMedia;
 
 @RestController
 public class TestTicketmasterController {
@@ -42,4 +43,11 @@ public class TestTicketmasterController {
 		return new ResponseEntity<>(stats.GenreEventi(stateCode,genre),HttpStatus.OK);
 	
 	}
+	
+	@GetMapping(value="/eventiMensili")
+	public ResponseEntity<Object>getEventiMensili(@RequestParam(name="stateCode")String stateCode){
+		MinMaxMedia stats=new MinMaxMedia();
+		return new ResponseEntity<>(stats.EventiMensili(stateCode),HttpStatus.OK);
+	}
+	
 }

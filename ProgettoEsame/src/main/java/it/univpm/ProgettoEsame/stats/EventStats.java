@@ -10,7 +10,8 @@ import it.univpm.ProgettoEsame.service.TicketmasterServiceImpl;
 public class EventStats {
 
 	TicketmasterServiceImpl service=new	TicketmasterServiceImpl();
-
+	private int[]monthsEvents;
+	
 	@SuppressWarnings("unchecked")
 	public JSONObject TotEventi(String stateCode) {
 
@@ -19,7 +20,7 @@ public class EventStats {
 
 		int eventiTot=0;
 
-		int[] monthsEvents=new int[12];
+		monthsEvents=new int[12];
 
 		for(int i=0;i<st.getEvento().size();i++) {
 
@@ -56,4 +57,11 @@ public class EventStats {
 		return obj;
 
 	}
+
+	public int[] getMonthsEvents() {
+		return monthsEvents;
+		
+	}
+	
+	
 }

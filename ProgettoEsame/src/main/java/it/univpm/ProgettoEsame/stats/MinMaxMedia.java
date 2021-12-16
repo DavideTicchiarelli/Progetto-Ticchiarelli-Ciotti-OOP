@@ -1,72 +1,80 @@
 package it.univpm.ProgettoEsame.stats;
 
+import org.json.simple.JSONObject;
+
+import it.univpm.ProgettoEsame.model.Stato;
+import it.univpm.ProgettoEsame.service.TicketmasterServiceImpl;
+
 public class MinMaxMedia {
-	
+
 	private int min;
 	private int max;
 	private double media;
-	
+	TicketmasterServiceImpl service=new	TicketmasterServiceImpl();
+
 	public MinMaxMedia() {}
-	
-	public int[] bubbleSort(int numeroEventi[] ){
-		int n=numeroEventi.length;
-	    int i, j;
 
-	    for (i=0;i<n-1;i++){
+	public int[] sortSelectedEvents(int[] numEventi) {
 
-	        for (j=0;j<n-i-1;j++) {
-	            if (numeroEventi[j]>numeroEventi[j+1]){
-	                int tmp=numeroEventi[j];
-	                numeroEventi[j]=numeroEventi[j+1];
-	                numeroEventi[j+1]=tmp;
-	            }
-	        }
-	    }
-	    return numeroEventi;
+		int n = numEventi.length;
+		int temp = 0;  
+
+		for(int i = 0; i<n; i++){  
+
+			for(int j=1; j<(n-i);j++){  
+
+				if(numEventi[j-1] > numEventi[j]){ 
+
+					temp = numEventi[j-1];  
+					numEventi[j-1] = numEventi[j];  
+					numEventi[j] = temp;  
+
+				}  
+			}  
+		}    
+		return numEventi;	
 	}
-	
-	public void minEventi(int[]numeroEventi) {
-		this.min=numeroEventi[0];	
+
+	public int minEventi(int[]numeroEventi) {
+		sortSelectedEvents(numeroEventi);
+		return this.min=numeroEventi[0];	
 	}
-	
-	public void maxEventi(int[]numeroEventi) {
+
+	public int maxEventi(int[]numeroEventi) {
 		int max=numeroEventi.length;
-		this.max=numeroEventi[max-1];
+		sortSelectedEvents(numeroEventi);
+		return this.max=numeroEventi[max-1];
 	}
-	
-	public void mediaEventi(int[]numeroEventi) {
+
+	public double mediaEventi(int[]numeroEventi) {
 		int cont=0;
-		
+
 		for(int i=0;i<numeroEventi.length;i++) {
 			cont+=numeroEventi[i];
 			this.media=(double)cont/(double)numeroEventi.length;
 		}
-		
-	}
-
-	public int getMin() {
-		return min;
-	}
-
-	public void setMin(int min) {
-		this.min = min;
-	}
-
-	public int getMax() {
-		return max;
-	}
-
-	public void setMax(int max) {
-		this.max = max;
-	}
-
-	public double getMedia() {
-		return media;
-	}
-
-	public void setMedia(double media) {
-		this.media = media;
-	}
-
+		return this.media;
+	}	
 	
+	@SuppressWarnings("unchecked")
+    public JSONObject EventiMensili(String stateCode) {
+
+        Stato st=new Stato(stateCode);
+        st=service.getStatoEvents(stateCode);
+
+        EventStats stat=new EventStats();
+
+        min=minEventi(stat.getMonthsEvents());;
+        max=maxEventi(stat.getMonthsEvents());
+        media=mediaEventi(stat.getMonthsEvents());
+
+        JSONObject obj=new JSONObject();
+        obj.put("numero minimo di eventi mensili in "+st.getNomeStato(),min);
+        obj.put("numero massimo di eventi mensili in "+st.getNomeStato(),max);
+        obj.put("numero medio di eventi mensili in "+st.getNomeStato(),media);
+        return obj;
+    }
 }
+
+
+
