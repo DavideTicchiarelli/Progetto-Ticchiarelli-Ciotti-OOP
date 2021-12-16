@@ -9,13 +9,11 @@ public class Stato {
 	private Vector<Evento> evento=new Vector<Evento>();
 
 	public Stato(String nome) {
-		super();
 		this.nome = nome;
 		this.stateCode = null;
 	}
 
 	public Stato(String nome, String stateCode) {
-		super();
 		this.nome = nome;
 		this.stateCode = stateCode;
 		this.evento = null;
@@ -23,7 +21,6 @@ public class Stato {
 
 	
 	public Stato(String nome, String stateCode, Vector<Evento> evento) {
-		super();
 		this.nome = nome;
 		this.stateCode = stateCode;
 		this.evento = evento;
@@ -55,15 +52,5 @@ public class Stato {
 	this.stateCode = stateCode;
 	}
 	
-//	public String toStringVector() {
-//		String line="";
-//		for(int i=0;i<evento.size();i++) {
-//			line=evento.get(i).toString();		
-//		}
-//		return line;
-//	}
-//	
-//	public String toString() {
-//		return "nome="+nome+", listaEvento="+toStringVector()+"";
-//	}
+
 }

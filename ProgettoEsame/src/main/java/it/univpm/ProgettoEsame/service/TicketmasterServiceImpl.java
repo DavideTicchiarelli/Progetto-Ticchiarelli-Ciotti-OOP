@@ -4,19 +4,16 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.net.MalformedURLException;
-import java.net.URI;
 import java.net.URL;
 import java.net.URLConnection;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.Vector;
-
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
+
 
 import it.univpm.ProgettoEsame.model.Evento;
 import it.univpm.ProgettoEsame.model.Stato;
@@ -40,6 +37,7 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 		
 			String dati="";
 			String line="";
+			
 			try {
 				InputStreamReader inReader=new InputStreamReader(input);
 				BufferedReader buffer=new BufferedReader(inReader);
