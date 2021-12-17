@@ -124,10 +124,15 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 			JSONObject embedded2=(JSONObject)currentCont.get("_embedded");
 			JSONArray venues=(JSONArray)embedded2.get("venues");
 
-			JSONObject venuesTemp=(JSONObject)venues.get(0);
-			JSONObject namecity=(JSONObject)venuesTemp.get("city");
-			String citta=(String)namecity.get("name");
-			ev.setCitta(citta);
+			for(int j=0;j<venues.size();j++) {
+				JSONObject venuesTemp=(JSONObject)venues.get(j);
+				JSONObject namecity=(JSONObject)venuesTemp.get("city");
+				JSONObject namestate=(JSONObject)venuesTemp.get("state");
+				String citta=(String)namecity.get("name");
+				String state=(String)namestate.get("name");
+				ev.setCitta(citta);
+				ev.setStato(state);
+			}
 			
 			eventi.add(ev);
 		}
@@ -155,6 +160,7 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 			Ev.put("name", (stato.getEvento().get(i)).getNome());
 			Ev.put("url", (stato.getEvento().get(i)).getUrl());
 			Ev.put("city", (stato.getEvento().get(i)).getCitta());
+			Ev.put("state", (stato.getEvento().get(i).getStato()));
 			
 			LocalDate localDate = (stato.getEvento().get(i)).getDate();
 			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");

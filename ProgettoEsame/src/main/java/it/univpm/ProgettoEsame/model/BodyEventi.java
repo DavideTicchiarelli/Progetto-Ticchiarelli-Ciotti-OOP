@@ -4,18 +4,18 @@ import java.util.Vector;
 
 public class BodyEventi {
 	
-	private Vector<String>stati;
+	private Vector<String>stateCode;
 	private Vector<String>generi;
 	private Vector<String>periodo;
 	
-	public BodyEventi(Vector<String> stati, Vector<String> generi, Vector<String> periodo) {
-		this.stati = stati;
+	public BodyEventi(Vector<String> stateCode, Vector<String> generi, Vector<String> periodo) {
+		this.stateCode = stateCode;
 		this.generi = generi;
 		this.periodo = periodo;
 	}
 
 	public Vector<String> getStati() {
-		return stati;
+		return stateCode;
 	}
 
 	public Vector<String> getGeneri() {
