@@ -1,12 +1,17 @@
 package it.univpm.ProgettoEsame.filters;
 
 import java.util.Vector;
+
+import org.json.simple.JSONObject;
+
 import it.univpm.ProgettoEsame.model.Evento;
+import it.univpm.ProgettoEsame.stats.GenreStats;
 
 
 public class GenreFilter {
 
-	public Vector<Evento> FiltroGenere (String genere, Vector<Evento> eventiDaFiltrare) {
+	public JSONObject FiltroGenere (String genere, Vector<Evento> eventiDaFiltrare) {
+		GenreStats stats=new GenreStats();
 		
 		Vector<Evento> eventiFiltrati = new Vector<Evento>();
 		
@@ -16,7 +21,7 @@ public class GenreFilter {
 				eventiFiltrati.add(ev);
 			
 		}	
-		return eventiFiltrati;
-		
+	
+		return stats.GenreEventi(eventiDaFiltrare, genere);
 	}
 }

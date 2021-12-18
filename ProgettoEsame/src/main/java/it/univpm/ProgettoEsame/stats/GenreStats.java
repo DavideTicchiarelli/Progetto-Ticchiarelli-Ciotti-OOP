@@ -1,9 +1,10 @@
 package it.univpm.ProgettoEsame.stats;
 
+import java.util.Vector;
+
 import org.json.simple.JSONObject;
 
 import it.univpm.ProgettoEsame.model.Evento;
-import it.univpm.ProgettoEsame.model.Stato;
 import it.univpm.ProgettoEsame.service.TicketmasterServiceImpl;
 
 public class GenreStats {
@@ -11,18 +12,16 @@ public class GenreStats {
 	TicketmasterServiceImpl service=new	TicketmasterServiceImpl();
 	
 	@SuppressWarnings("unchecked")
-	public JSONObject GenreEventi(String stateCode,String genre) {
-		
-		Stato st=new Stato(stateCode);
-		st=service.getStatoEvents(stateCode);
+	public JSONObject GenreEventi(Vector<Evento>eventidaFiltrare,String genre) {
 		
 		int contGenre=0;
 		
 		JSONObject obj=new JSONObject();
+		Evento ev=new Evento();
 		
-		for(int i=0;i<st.getEvento().size();i++) {
-			Evento ev=new Evento();
-			ev=st.getEvento().get(i);
+		for(int i=0;i<eventidaFiltrare.size();i++) {
+			
+			ev=eventidaFiltrare.get(i);
 			
 			if(genre.equals(ev.getGenere())) {
 				contGenre++;
@@ -30,7 +29,7 @@ public class GenreStats {
 			
 		}
 		
-		obj.put("eventi per il genere "+genre+" in "+st.getNomeStato(), contGenre);
+		obj.put(genre+" in "+ev.getStato(), contGenre);
 		return obj;
 	}
 }

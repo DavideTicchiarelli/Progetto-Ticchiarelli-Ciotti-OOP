@@ -12,9 +12,12 @@ import java.util.Vector;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.JSONValue;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.springframework.stereotype.Service;
 
-
+import ch.qos.logback.core.joran.event.BodyEvent;
+import it.univpm.ProgettoEsame.model.BodyEventi;
 import it.univpm.ProgettoEsame.model.Evento;
 import it.univpm.ProgettoEsame.model.Stato;
 
@@ -83,11 +86,11 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 	}
 
 	@Override
-	public Stato getStatoEvents(String stateCode) {
+	public Vector<Evento> getStatoEvents(String stateCode) {
 
 		JSONObject obj=getJSONEvento(stateCode);
-		Stato st=new Stato(stateCode);
-		st=getStatoAPI(stateCode);
+//		Stato st=new Stato(stateCode);
+//		st=getStatoAPI(stateCode);
 
 		JSONObject embedded1=(JSONObject)obj.get("_embedded");
 		JSONArray events=(JSONArray)embedded1.get("events");
@@ -127,48 +130,51 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 			for(int j=0;j<venues.size();j++) {
 				JSONObject venuesTemp=(JSONObject)venues.get(j);
 				JSONObject namecity=(JSONObject)venuesTemp.get("city");
-				JSONObject namestate=(JSONObject)venuesTemp.get("state");
+				JSONObject state=(JSONObject)venuesTemp.get("state");
 				String citta=(String)namecity.get("name");
-				String state=(String)namestate.get("name");
+				String namestate=(String)state.get("name");
+				String statecode=(String)state.get("stateCode");
 				ev.setCitta(citta);
-				ev.setStato(state);
+				ev.setStato(namestate);
+				ev.setStateCode(statecode);
 			}
 			
 			eventi.add(ev);
 		}
-		st.setEvento(eventi);
-		return st;
+//		st.setEvento(eventi);
+		return eventi;
 	}
 
 
 	@SuppressWarnings("unchecked")
 	@Override 
-	public JSONObject toJSON(Stato stato) {
+	public JSONObject toJSON(Vector<Evento> stato) {
 
 		JSONObject obj=new JSONObject();
 
-		obj.put("name", stato.getNomeStato());
-		obj.put("stateCode", stato.getStateCode());
+//		obj.put("name", stato.getNomeStato());
+//		obj.put("stateCode", stato.getStateCode());
 
 		JSONArray listaEventi=new JSONArray();
 		
 
-		for(int i=0;i<(stato.getEvento().size());i++) {
+		for(int i=0;i<(stato.size());i++) {
 
 			JSONObject Ev=new JSONObject();
 
-			Ev.put("name", (stato.getEvento().get(i)).getNome());
-			Ev.put("url", (stato.getEvento().get(i)).getUrl());
-			Ev.put("city", (stato.getEvento().get(i)).getCitta());
-			Ev.put("state", (stato.getEvento().get(i).getStato()));
+			Ev.put("name", (stato.get(i)).getNome());
+			Ev.put("url", (stato.get(i)).getUrl());
+			Ev.put("city", (stato.get(i)).getCitta());
+			Ev.put("state", (stato.get(i).getStato()));
+			Ev.put("stateCode",(stato.get(i).getStateCode()));
 			
-			LocalDate localDate = (stato.getEvento().get(i)).getDate();
+			LocalDate localDate = (stato.get(i)).getDate();
 			DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 			String formattedString = localDate.format(formatter);
 			
 			Ev.put("localDate", formattedString);
-			Ev.put("localTime", (stato.getEvento().get(i)).getOra());
-			Ev.put("genre", (stato.getEvento().get(i)).getGenere());
+			Ev.put("localTime", (stato.get(i)).getOra());
+			Ev.put("genre", (stato.get(i)).getGenere());
 
 			listaEventi.add(Ev);
 		}
@@ -177,4 +183,85 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 
 		return obj;
 	}
+	/*
+	 * {
+    "stati":[
+       { 
+        "stato1":"AZ"
+        },
+       {
+         "stato2":"NC"
+        }
+    ],
+    "generi":[
+        {
+        "genere1":"Football"
+        },
+        {
+        "genere2":"Basketball"
+        }
+     ],
+    "periodo":[
+        {
+        "inizio":"2022-01-01"
+        },
+        {
+        "fine":"2022-03-01"
+        }
+    ]
+    }
+	 */
+	public BodyEventi readBody(String body) {
+		Vector<String>stati=new Vector<String>();
+		Vector<String>generi=new Vector<String>();
+		Vector<String>periodo=new Vector<String>();
+	 	BodyEventi eb;
+	 	JSONObject Body;
+		try {
+			Body= (JSONObject)new JSONParser().parse(body);
+//			JSONObject obj=(JSONObject)new JSONObject();
+			
+
+			JSONArray jsonstati=(JSONArray)Body.get("stati");
+			
+			for(int j=0;j<jsonstati.size();j++) {
+				JSONObject statetmp=(JSONObject)jsonstati.get(j);
+				String stato1=(String)statetmp.get("stato1");
+				String stato2=(String)statetmp.get("stato2");
+				
+				stati.add(j,stato1);
+				stati.add(j,stato2);
+			}
+
+			JSONArray jsongeneri=(JSONArray)Body.get("generi");
+				for(int j=0;j<generi.size();j++) {
+					JSONObject genretemp=(JSONObject)jsongeneri.get(j);
+					String genere1=(String)genretemp.get("genere1");
+					String genere2=(String)genretemp.get("genere2");
+					
+					generi.add(j,genere1);
+					generi.add(j,genere2);
+					
+			}
+				
+				JSONArray jsonperiodo=(JSONArray)Body.get("generi");
+				for(int j=0;j<periodo.size();j++) {
+					JSONObject periodotemp=(JSONObject)jsonperiodo.get(j);
+					String periodo1=(String)periodotemp.get("genere1");
+					String periodo2=(String)periodotemp.get("genere2");
+					
+					periodo.add(j,periodo1);
+					periodo.add(j,periodo2);
+					
+			}
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+			return eb=new BodyEventi(stati,generi,periodo);
+		
+		
+	}
+	
 }

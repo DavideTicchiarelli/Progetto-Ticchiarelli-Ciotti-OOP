@@ -13,7 +13,7 @@ public class BodyEventi {
 		this.generi = generi;
 		this.periodo = periodo;
 	}
-
+	
 	public Vector<String> getStati() {
 		return stateCode;
 	}
@@ -25,5 +25,18 @@ public class BodyEventi {
 	public Vector<String> getPeriodo() {
 		return periodo;
 	}
+
+	public void setStateCode(Vector<String> stateCode) {
+		this.stateCode = stateCode;
+	}
+
+	public void setGeneri(Vector<String> generi) {
+		this.generi = generi;
+	}
+
+	public void setPeriodo(Vector<String> periodo) {
+		this.periodo = periodo;
+	}
+	
 
 }

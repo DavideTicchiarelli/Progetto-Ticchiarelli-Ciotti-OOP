@@ -1,8 +1,10 @@
 package it.univpm.ProgettoEsame.stats;
 
+import java.util.Vector;
+
 import org.json.simple.JSONObject;
 
-import it.univpm.ProgettoEsame.model.Stato;
+import it.univpm.ProgettoEsame.model.Evento;
 import it.univpm.ProgettoEsame.service.TicketmasterServiceImpl;
 
 public class MinMaxMedia {
@@ -16,18 +18,18 @@ public class MinMaxMedia {
 
 	public int[] sortSelectedEvents(int[] numEventi) {
 
-		int n = numEventi.length;
-		int temp = 0;  
+		int n=numEventi.length;
+		int temp=0;  
 
-		for(int i = 0; i<n; i++){  
+		for(int i=0;i<n;i++){  
 
-			for(int j=1; j<(n-i);j++){  
+			for(int j=1;j<(n-i);j++){  
 
-				if(numEventi[j-1] > numEventi[j]){ 
+				if(numEventi[j-1]>numEventi[j]){ 
 
-					temp = numEventi[j-1];  
-					numEventi[j-1] = numEventi[j];  
-					numEventi[j] = temp;  
+					temp=numEventi[j-1];  
+					numEventi[j-1]=numEventi[j];  
+					numEventi[j]=temp;  
 
 				}  
 			}  
@@ -59,8 +61,9 @@ public class MinMaxMedia {
 	@SuppressWarnings("unchecked")
     public JSONObject EventiMensili(String stateCode) {
 
-        Stato st=new Stato(stateCode);
-        st=service.getStatoEvents(stateCode);
+//		Vector<Evento>eventiPerStato=new Vector<Evento>();
+//		eventiPerStato=service.getStatoEvents(stateCode);
+//		Evento ev=new Evento();
 
         EventStats stat=new EventStats();
 
@@ -69,9 +72,9 @@ public class MinMaxMedia {
         media=mediaEventi(stat.MonthsEvents(stateCode));
 
         JSONObject obj=new JSONObject();
-        obj.put("numero minimo di eventi mensili in "+st.getNomeStato(),min);
-        obj.put("numero massimo di eventi mensili in "+st.getNomeStato(),max);
-        obj.put("numero medio di eventi mensili in "+st.getNomeStato(),media);
+        obj.put("numero minimo di eventi",min);
+        obj.put("numero massimo di eventi",max);
+        obj.put("numero medio di eventi",media);
         return obj;
     }
 }

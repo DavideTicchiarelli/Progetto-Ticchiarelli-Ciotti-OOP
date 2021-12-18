@@ -6,12 +6,13 @@ public class Evento {
 	private String nome;
 	private String url;
 	private String citta;
+	private String stateCode;
 	private LocalDate date;
 	private String ora;
 	private String genere;	
 	private String stato;
     
-	public Evento(String nome, String url, String citta, LocalDate date, String ora, String genere,String stato) {
+	public Evento(String nome, String url, String citta, LocalDate date, String ora, String genere,String stato,String stateCode) {
 		this.nome = nome;
 		this.url = url;
 		this.citta = citta;
@@ -19,6 +20,7 @@ public class Evento {
 		this.ora = ora;
 		this.genere = genere;
 		this.stato=stato;
+		this.stateCode=stateCode;
 	}
 
 	public Evento() {};
@@ -81,6 +83,14 @@ public class Evento {
 
 	public void setStato(String stato) {
 		this.stato = stato;
+	}
+
+	public String getStateCode() {
+		return stateCode;
+	}
+
+	public void setStateCode(String stateCode) {
+		this.stateCode = stateCode;
 	}
 	
 }
