@@ -75,4 +75,27 @@ public class EventStats {
 		
 	}
 	
+	@SuppressWarnings("unchecked")
+	public JSONObject totEventi(String stateCode) {
+		
+		Vector<Evento>eventidaFiltrare=service.getStatoEvents(stateCode);
+		JSONObject obj=new JSONObject();
+
+		int eventiTot=0;
+		
+		Evento ev=new Evento();
+		monthsEvents=MonthsEvents(stateCode);
+		
+		for(int i=0;i<monthsEvents.length;i++) {
+			eventiTot+=monthsEvents[i];	
+			ev=eventidaFiltrare.get(i);
+			
+			
+		}
+		obj.put("eventi", eventiTot);	
+
+		return obj;
+		
+	}
+	
 }

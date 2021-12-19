@@ -1,10 +1,7 @@
 package it.univpm.ProgettoEsame.filters;
 
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
 import java.util.Vector;
 
-import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import it.univpm.ProgettoEsame.model.Evento;

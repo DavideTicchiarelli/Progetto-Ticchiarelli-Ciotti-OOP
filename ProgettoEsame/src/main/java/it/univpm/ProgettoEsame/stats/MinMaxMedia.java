@@ -61,10 +61,6 @@ public class MinMaxMedia {
 	@SuppressWarnings("unchecked")
     public JSONObject EventiMensili(String stateCode) {
 
-//		Vector<Evento>eventiPerStato=new Vector<Evento>();
-//		eventiPerStato=service.getStatoEvents(stateCode);
-//		Evento ev=new Evento();
-
         EventStats stat=new EventStats();
 
         min=minEventi(stat.MonthsEvents(stateCode));;

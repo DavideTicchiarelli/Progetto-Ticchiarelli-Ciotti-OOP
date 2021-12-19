@@ -18,6 +18,7 @@ import org.springframework.stereotype.Service;
 
 import ch.qos.logback.core.joran.event.BodyEvent;
 import it.univpm.ProgettoEsame.filters.GenreFilter;
+import it.univpm.ProgettoEsame.filters.MinMaxMediaFilter;
 import it.univpm.ProgettoEsame.model.BodyEventi;
 import it.univpm.ProgettoEsame.model.Evento;
 import it.univpm.ProgettoEsame.model.Stato;
@@ -64,6 +65,7 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 		return evento;		
 	}
 	
+	@Override
 	public JSONObject getJSONEvento2() {
 		
 		JSONObject evento=null;
@@ -98,6 +100,7 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 		return evento;		
 	}
 	
+	@Override
 	public Vector<Evento> getStatoEvents2() {
 
 		JSONObject obj=getJSONEvento2();
@@ -352,12 +355,18 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 
 	}
 	
-	public JSONObject getResultEventi(String statecode,String genere) {
+	@Override
+	public JSONObject getResultEventi(String statecode,String genere,String inizio,String fine) {
 		
 		GenreFilter filtro=new GenreFilter();
+		MinMaxMediaFilter filter=new MinMaxMediaFilter();
+		Vector<Evento>eventi=new Vector<Evento>();
+		BodyEventi eb;
 		
-		JSONObject result=toJSON(filtro.Filtrogenere(genere, getStatoEvents(statecode)));
+	
+		eventi=(filtro.Filtrogenere(genere, getStatoEvents(statecode)));
 		
+		JSONObject result=toJSON(filter.filtroperiodo(inizio,fine,eventi));
 		return result ;
 		
 	}
