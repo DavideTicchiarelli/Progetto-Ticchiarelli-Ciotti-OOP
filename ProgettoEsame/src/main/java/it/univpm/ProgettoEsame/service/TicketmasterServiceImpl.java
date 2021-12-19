@@ -17,6 +17,7 @@ import org.json.simple.parser.ParseException;
 import org.springframework.stereotype.Service;
 
 import ch.qos.logback.core.joran.event.BodyEvent;
+import it.univpm.ProgettoEsame.filters.GenreFilter;
 import it.univpm.ProgettoEsame.model.BodyEventi;
 import it.univpm.ProgettoEsame.model.Evento;
 import it.univpm.ProgettoEsame.model.Stato;
@@ -25,7 +26,8 @@ import it.univpm.ProgettoEsame.model.Stato;
 public class TicketmasterServiceImpl implements TicketmasterService {
 
 	private String apikey="gcbb5hGg46qKGJTo1XeuoIY1AK7AgFiL";
-	private String url="https://app.ticketmaster.com/discovery/v2/events.json?stateCode=";
+	private String url1="https://app.ticketmaster.com/discovery/v2/events.json?stateCode=";
+	private String url2="https://app.ticketmaster.com/discovery/v2/events.json?countryCode=US";
 
 	@Override
 	public JSONObject getJSONEvento(String stateCode) {
@@ -33,7 +35,7 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 		JSONObject evento=null;
 		
 		try {
-			URL u = new URL(this.url+stateCode+"&apikey="+apikey);
+			URL u = new URL(this.url1+stateCode+"&apikey="+apikey);
 
 			URLConnection openConnection=u.openConnection();
 			InputStream input=openConnection.getInputStream();
@@ -61,7 +63,96 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 		
 		return evento;		
 	}
+	
+	public JSONObject getJSONEvento2() {
+		
+		JSONObject evento=null;
+		
+		try {
+			URL u = new URL(this.url2+"&apikey="+apikey);
 
+			URLConnection openConnection=u.openConnection();
+			InputStream input=openConnection.getInputStream();
+		
+			String dati="";
+			String line="";
+			
+			try {
+				InputStreamReader inReader=new InputStreamReader(input);
+				BufferedReader buffer=new BufferedReader(inReader);
+				
+				while((line=buffer.readLine())!=null){
+					dati+=line;
+				}
+			}finally {
+				input.close();
+			}
+				evento=(JSONObject) JSONValue.parseWithException(dati);
+				
+		}catch(IOException e) {
+			e.printStackTrace();
+		}catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		return evento;		
+	}
+	
+	public Vector<Evento> getStatoEvents2() {
+
+		JSONObject obj=getJSONEvento2();
+
+		JSONObject embedded1=(JSONObject)obj.get("_embedded");
+		JSONArray events=(JSONArray)embedded1.get("events");
+
+		Vector<Evento> eventi=new Vector<Evento>(events.size());
+
+		for(int i=0;i<events.size();i++) {
+
+			Evento ev=new Evento();
+			
+			JSONObject currentCont=(JSONObject)events.get(i);
+			
+			String nome=(String)currentCont.get("name");
+			String url=(String)currentCont.get("url");
+			
+			ev.setNome(nome);
+			ev.setUrl(url);
+
+			JSONObject dates=(JSONObject)currentCont.get("dates");
+			JSONObject start=(JSONObject)dates.get("start");
+			
+			LocalDate date=LocalDate.parse((CharSequence) start.get("localDate"));
+			
+			ev.setDate(date);
+			String localtime=(String)start.get("localTime");
+			ev.setOra(localtime);
+
+			JSONArray classifications=(JSONArray)currentCont.get("classifications");
+			JSONObject classificationsTemp=(JSONObject)classifications.get(0);
+			JSONObject genre=(JSONObject)classificationsTemp.get("genre");
+			String nameGenre=(String)genre.get("name");
+			ev.setGenere(nameGenre);
+
+			JSONObject embedded2=(JSONObject)currentCont.get("_embedded");
+			JSONArray venues=(JSONArray)embedded2.get("venues");
+
+			for(int j=0;j<venues.size();j++) {
+				JSONObject venuesTemp=(JSONObject)venues.get(j);
+				JSONObject namecity=(JSONObject)venuesTemp.get("city");
+				JSONObject state=(JSONObject)venuesTemp.get("state");
+				String citta=(String)namecity.get("name");
+				String namestate=(String)state.get("name");
+				String statecode=(String)state.get("stateCode");
+				ev.setCitta(citta);
+				ev.setStato(namestate);
+				ev.setStateCode(statecode);
+			}
+			
+			eventi.add(ev);
+		}
+		return eventi;
+	}
 	
 	@Override
 	public Stato getStatoAPI(String stateCode) {
@@ -219,48 +310,55 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 	 	JSONObject Body;
 		try {
 			Body= (JSONObject)new JSONParser().parse(body);
-//			JSONObject obj=(JSONObject)new JSONObject();
-			
 
 			JSONArray jsonstati=(JSONArray)Body.get("stati");
 			
-			for(int j=0;j<jsonstati.size();j++) {
-				JSONObject statetmp=(JSONObject)jsonstati.get(j);
+				JSONObject statetmp=(JSONObject)jsonstati.get(0);
+				JSONObject statetmp2=(JSONObject)jsonstati.get(1);
+
 				String stato1=(String)statetmp.get("stato1");
-				String stato2=(String)statetmp.get("stato2");
+				String stato2=(String)statetmp2.get("stato2");
 				
-				stati.add(j,stato1);
-				stati.add(j,stato2);
-			}
+				stati.add(stato1);
+				stati.add(stato2);
 
 			JSONArray jsongeneri=(JSONArray)Body.get("generi");
-				for(int j=0;j<generi.size();j++) {
-					JSONObject genretemp=(JSONObject)jsongeneri.get(j);
-					String genere1=(String)genretemp.get("genere1");
-					String genere2=(String)genretemp.get("genere2");
-					
-					generi.add(j,genere1);
-					generi.add(j,genere2);
-					
-			}
 				
-				JSONArray jsonperiodo=(JSONArray)Body.get("generi");
-				for(int j=0;j<periodo.size();j++) {
-					JSONObject periodotemp=(JSONObject)jsonperiodo.get(j);
-					String periodo1=(String)periodotemp.get("genere1");
-					String periodo2=(String)periodotemp.get("genere2");
+					JSONObject genretemp=(JSONObject)jsongeneri.get(0);
+					JSONObject genretemp2=(JSONObject)jsongeneri.get(1);
+					String genere1=(String)genretemp.get("genere1");
+					String genere2=(String)genretemp2.get("genere2");
 					
-					periodo.add(j,periodo1);
-					periodo.add(j,periodo2);
+					generi.add(genere1);
+					generi.add(genere2);
+				
+				
+				JSONArray jsonperiodo=(JSONArray)Body.get("periodo");
+			
+					JSONObject periodotemp=(JSONObject)jsonperiodo.get(0);
+					JSONObject periodotemp2=(JSONObject)jsonperiodo.get(1);
+					String periodo1=(String)periodotemp.get("inizio");
+					String periodo2=(String)periodotemp2.get("fine");
 					
-			}
+					periodo.add(periodo1);
+					periodo.add(periodo2);
+				
+			
 		} catch (ParseException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
 			return eb=new BodyEventi(stati,generi,periodo);
+
+	}
+	
+	public JSONObject getResultEventi(String statecode,String genere) {
 		
+		GenreFilter filtro=new GenreFilter();
+		
+		JSONObject result=toJSON(filtro.Filtrogenere(genere, getStatoEvents(statecode)));
+		
+		return result ;
 		
 	}
 	

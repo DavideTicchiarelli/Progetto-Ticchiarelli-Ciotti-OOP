@@ -51,14 +51,14 @@ public class TestTicketmasterController {
 //		return new ResponseEntity<>(stats.TotEventi(stateCode),HttpStatus.OK);
 //	}
 	
-//	@GetMapping(value="/numGenere")
-//	public ResponseEntity<Object>getNumGeneri(@RequestParam(name="stateCode")String stateCode,
-//												@RequestParam(name="genre")String genre){
-//		GenreStats stats=new GenreStats();
-//		
-//		return new ResponseEntity<>(stats.GenreEventi(stateCode,genre),HttpStatus.OK);
-//	
-//	}
+	@GetMapping(value="/numGenere")
+	public ResponseEntity<Object>getNumGeneri(@RequestParam(name="stateCode")String stateCode,
+												@RequestParam(name="genre")String genre){
+		GenreStats stats=new GenreStats();
+		
+		return new ResponseEntity<>(stats.GenreEventi(ticketmasterservice.getStatoEvents(stateCode),genre),HttpStatus.OK);
+	
+	}
 	
 	@GetMapping(value="/eventiMensili")
 	public ResponseEntity<Object>getEventiMensili(@RequestParam(name="stateCode")String stateCode){
@@ -99,33 +99,57 @@ public class TestTicketmasterController {
 	public ResponseEntity<Object> getEventi(@RequestBody String body){
 		
 		JSONObject risultato=new JSONObject();
+			Vector<Vector<Evento>>Eventi=new Vector<Vector<Evento>>();
 			Vector<Evento>eventidaFiltrare=new Vector<Evento>();
+			Vector<Evento>eventidaFiltrare2=new Vector<Evento>();
+
+			JSONObject eventi=new JSONObject();
 			JSONObject eventiFiltratiPerStati=new JSONObject();
+			JSONObject eventiFiltratiPerStati2=new JSONObject();
 			JSONObject eventiFiltratiPerGenere=new JSONObject();
+			JSONObject eventiFiltratiPerGenere2=new JSONObject();
+
 			BodyEventi eb;
-		
+			Vector<String>stati,generi,periodo,prova,prova2,prova3;
 			
 			EventStats stats=new EventStats();
 			GenreStats stat=new GenreStats();
 			StateFilter filtrostati=new StateFilter();
 			GenreFilter filtrogenere=new GenreFilter();
+
 			
 			eb=ticketmasterservice.readBody(body);
-					
-			for(int i=0;i<eventidaFiltrare.size();i++) {
-				
-				eventidaFiltrare=ticketmasterservice.getStatoEvents(eb.getStati().get(i));
-				
-				eventiFiltratiPerStati=filtrostati.FiltroStati(eb.getStati().get(i),eventidaFiltrare);
-				
-				eventiFiltratiPerGenere=filtrogenere.FiltroGenere(eb.getGeneri().get(i),eventidaFiltrare);
-				
-				
-			}
-			
-			risultato.put("Totale Eventi ",eventiFiltratiPerStati);
-			risultato.put("Eventi per il genere",eventiFiltratiPerGenere);
 		
+			stati=eb.getStati();
+			generi=eb.getGeneri();
+			periodo=eb.getPeriodo();
+			String s1=stati.get(0);
+			String s2=stati.get(1);
+			String g1=generi.get(0);
+			String g2=generi.get(1);
+			
+
+				eventidaFiltrare=ticketmasterservice.getStatoEvents(s1);
+				eventidaFiltrare2=ticketmasterservice.getStatoEvents(s2);
+
+				eventiFiltratiPerStati=filtrostati.FiltroStati(s1,eventidaFiltrare);
+				eventiFiltratiPerGenere=filtrogenere.FiltroGenere(g1,eventidaFiltrare);
+				Evento ev1=new Evento();
+				ev1=eventidaFiltrare.get(0);
+				eventiFiltratiPerStati2=filtrostati.FiltroStati(s2,eventidaFiltrare2);
+				eventiFiltratiPerGenere2=filtrogenere.FiltroGenere(g2,eventidaFiltrare2);
+				Evento ev2=new Evento();
+				ev2=eventidaFiltrare2.get(0);
+
+			risultato.put("Totale Eventi in "+ev1.getStato(),eventiFiltratiPerStati);		
+			risultato.put("Totale Eventi in "+ev2.getStato(),eventiFiltratiPerStati2);
+			
+			risultato.put("Eventi per il genere "+g1,eventiFiltratiPerGenere);
+			risultato.put("Eventi per il genere "+g2,eventiFiltratiPerGenere2);
+			
+			risultato.put("eventi in "+ev1.getStato(),ticketmasterservice.getResultEventi(s1,g1));
+			risultato.put("eventi in "+ev2.getStato(),ticketmasterservice.getResultEventi(s2,g2));
+			
 		return new ResponseEntity<>(risultato,HttpStatus.OK);
 	}
 	

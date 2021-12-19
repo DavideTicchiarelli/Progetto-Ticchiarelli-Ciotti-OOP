@@ -12,16 +12,16 @@ public class GenreStats {
 	TicketmasterServiceImpl service=new	TicketmasterServiceImpl();
 	
 	@SuppressWarnings("unchecked")
-	public JSONObject GenreEventi(Vector<Evento>eventidaFiltrare,String genre) {
+	public JSONObject GenreEventi(Vector<Evento>eventiFiltrati,String genre) {
 		
 		int contGenre=0;
 		
 		JSONObject obj=new JSONObject();
 		Evento ev=new Evento();
 		
-		for(int i=0;i<eventidaFiltrare.size();i++) {
+		for(int i=0;i<eventiFiltrati.size();i++) {
 			
-			ev=eventidaFiltrare.get(i);
+			ev=eventiFiltrati.get(i);
 			
 			if(genre.equals(ev.getGenere())) {
 				contGenre++;
@@ -29,7 +29,7 @@ public class GenreStats {
 			
 		}
 		
-		obj.put(genre+" in "+ev.getStato(), contGenre);
+		obj.put("in "+ev.getStato(), contGenre);
 		return obj;
 	}
 }

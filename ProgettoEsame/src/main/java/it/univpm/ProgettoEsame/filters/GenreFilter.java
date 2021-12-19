@@ -1,7 +1,10 @@
 package it.univpm.ProgettoEsame.filters;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Vector;
 
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 
 import it.univpm.ProgettoEsame.model.Evento;
@@ -22,6 +25,20 @@ public class GenreFilter {
 			
 		}	
 	
-		return stats.GenreEventi(eventiDaFiltrare, genere);
+		return stats.GenreEventi(eventiFiltrati, genere);
+	}
+	
+	public Vector<Evento> Filtrogenere (String genere, Vector<Evento> eventiDaFiltrare) {
+	
+		Vector<Evento> eventiFiltrati = new Vector<Evento>();
+		
+		for (Evento ev : eventiDaFiltrare) {
+			
+			if(genere.equals(ev.getGenere()))
+				eventiFiltrati.add(ev);
+			
+		}	
+	
+		return eventiFiltrati;
 	}
 }

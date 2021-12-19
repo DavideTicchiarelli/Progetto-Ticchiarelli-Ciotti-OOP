@@ -11,19 +11,20 @@ public class StateFilter {
 	
 	
 public JSONObject FiltroStati(String stato, Vector<Evento> eventiDaFiltrare) {
-	
+
 	EventStats stats=new EventStats();
 		
 		Vector<Evento> eventiFiltrati=new Vector<Evento>();
 		
 		for(Evento eventiTemp:eventiDaFiltrare) {
 			
-			if(stato.equals(eventiTemp.getStato()))
+			if(stato.equals(eventiTemp.getStateCode()))
 				eventiFiltrati.add(eventiTemp);
+				
 			
 		}
-		
-		return stats.TotEventi(eventiDaFiltrare, stato);
+	
+		return 	stats.TotEventi(eventiFiltrati, stato);
 		
 	}
 	
