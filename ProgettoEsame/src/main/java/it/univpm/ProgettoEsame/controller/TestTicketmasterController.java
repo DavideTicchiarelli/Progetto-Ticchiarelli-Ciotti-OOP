@@ -49,22 +49,13 @@ public class TestTicketmasterController {
 		GenreStats stats=new GenreStats();
 		
 		return new ResponseEntity<>(stats.GenreEventi(ticketmasterservice.getStatoEvents(stateCode),genre),HttpStatus.OK);
-	
 	}
 	
 	@GetMapping(value="/stats")
-	public ResponseEntity<Object>getStats(@RequestParam(name="stateCode")String stateCode,@RequestBody String body) throws ParseException{
-		MinMaxMediaFilter filtro=new MinMaxMediaFilter();
-		
-		JSONObject Body;
-		Body= (JSONObject)new JSONParser().parse(body);
-		JSONObject periodo=(JSONObject)Body.get("periodo");
-		String inizio=(String)periodo.get("inizio");
-		String fine=(String)periodo.get("fine");
-		
-
-		return new ResponseEntity<>(filtro.filtroPeriodo(inizio,fine,ticketmasterservice.getStatoEvents(stateCode)),HttpStatus.OK);
-
+	public ResponseEntity<Object>getStats(@RequestParam(name="stateCode")String stateCode) throws ParseException{
+		MinMaxMedia stats=new MinMaxMedia();
+	
+		return new ResponseEntity<>(stats.EventiMensili(stateCode),HttpStatus.OK);
 	}
 	
 	

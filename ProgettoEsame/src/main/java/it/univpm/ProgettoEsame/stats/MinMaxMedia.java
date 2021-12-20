@@ -1,10 +1,6 @@
 package it.univpm.ProgettoEsame.stats;
 
-import java.util.Vector;
-
 import org.json.simple.JSONObject;
-
-import it.univpm.ProgettoEsame.model.Evento;
 import it.univpm.ProgettoEsame.service.TicketmasterServiceImpl;
 
 public class MinMaxMedia {

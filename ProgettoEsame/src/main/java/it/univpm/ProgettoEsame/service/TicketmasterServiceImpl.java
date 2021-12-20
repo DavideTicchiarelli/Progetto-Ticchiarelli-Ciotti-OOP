@@ -15,8 +15,6 @@ import org.json.simple.JSONValue;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.springframework.stereotype.Service;
-
-import ch.qos.logback.core.joran.event.BodyEvent;
 import it.univpm.ProgettoEsame.filters.GenreFilter;
 import it.univpm.ProgettoEsame.filters.MinMaxMediaFilter;
 import it.univpm.ProgettoEsame.model.BodyEventi;
