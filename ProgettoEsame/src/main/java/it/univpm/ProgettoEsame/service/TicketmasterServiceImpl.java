@@ -293,14 +293,11 @@ public class TicketmasterServiceImpl implements TicketmasterService {
         "genere2":"Basketball"
         }
      ],
-    "periodo":[
+    "periodo":
         {
-        "inizio":"2022-01-01"
-        },
-        {
+        "inizio":"2022-01-01",
         "fine":"2022-03-01"
         }
-    ]
     }
 	 */
 	public BodyEventi readBody(String body) {
@@ -334,12 +331,9 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 			generi.add(genere2);
 				
 				
-			JSONArray jsonperiodo=(JSONArray)Body.get("periodo");
-			
-			JSONObject periodotemp=(JSONObject)jsonperiodo.get(0);
-			JSONObject periodotemp2=(JSONObject)jsonperiodo.get(1);
-			String periodo1=(String)periodotemp.get("inizio");
-			String periodo2=(String)periodotemp2.get("fine");
+			JSONObject jsonperiodo=(JSONObject)Body.get("periodo");
+			String periodo1=(String)jsonperiodo.get("inizio");
+			String periodo2=(String)jsonperiodo.get("fine");
 					
 			periodo.add(periodo1);
 			periodo.add(periodo2);

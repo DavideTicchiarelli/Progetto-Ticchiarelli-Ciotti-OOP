@@ -83,14 +83,11 @@ public class TestTicketmasterController {
         "genere2":"Basketball"
         }
      ],
-    "periodo":[
+    "periodo":
         {
-        "inizio":"2022-01-01"
-        },
-        {
+        "inizio":"2022-01-01",
         "fine":"2022-03-01"
         }
-    ]
     }
 	 */
 	@SuppressWarnings("unchecked")
