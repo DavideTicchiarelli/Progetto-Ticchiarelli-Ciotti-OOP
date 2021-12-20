@@ -131,15 +131,13 @@ public class TestTicketmasterController {
 		ev2=eventidaFiltrare2.get(0);
 
 		risultato.put("Totale Eventi in "+ev1.getStato(),eventiFiltratiPerStati);		
-		risultato.put("Totale Eventi in "+ev2.getStato(),eventiFiltratiPerStati2);
-
 		risultato.put("Eventi per il genere "+genere1,eventiFiltratiPerGenere);
-		risultato.put("Eventi per il genere "+genere2,eventiFiltratiPerGenere2);
-
 		risultato.put("Statistiche periodiche di eventi in "+ev1.getStato(), eventiFiltratiPeriodo);
-		risultato.put("Statistiche periodiche di eventi in "+ev2.getStato(), eventiFiltratiPeriodo2);
-		
 		risultato.put("eventi in "+ev1.getStato(),ticketmasterservice.getResultEventi(stato1,genere1,inizio,fine));
+		
+		risultato.put("Totale Eventi in "+ev2.getStato(),eventiFiltratiPerStati2);
+		risultato.put("Eventi per il genere "+genere2,eventiFiltratiPerGenere2);
+		risultato.put("Statistiche periodiche di eventi in "+ev2.getStato(), eventiFiltratiPeriodo2);	
 		risultato.put("eventi in "+ev2.getStato(),ticketmasterservice.getResultEventi(stato2,genere2,inizio,fine));
 
 		return new ResponseEntity<>(risultato,HttpStatus.OK);
