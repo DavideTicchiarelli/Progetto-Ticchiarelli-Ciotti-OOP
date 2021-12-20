@@ -316,35 +316,35 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 
 			JSONArray jsonstati=(JSONArray)Body.get("stati");
 			
-				JSONObject statetmp=(JSONObject)jsonstati.get(0);
-				JSONObject statetmp2=(JSONObject)jsonstati.get(1);
+			JSONObject statetmp=(JSONObject)jsonstati.get(0);
+			JSONObject statetmp2=(JSONObject)jsonstati.get(1);
 
-				String stato1=(String)statetmp.get("stato1");
-				String stato2=(String)statetmp2.get("stato2");
+			String stato1=(String)statetmp.get("stato1");
+			String stato2=(String)statetmp2.get("stato2");
 				
-				stati.add(stato1);
-				stati.add(stato2);
+			stati.add(stato1);
+			stati.add(stato2);
 
 			JSONArray jsongeneri=(JSONArray)Body.get("generi");
 				
-					JSONObject genretemp=(JSONObject)jsongeneri.get(0);
-					JSONObject genretemp2=(JSONObject)jsongeneri.get(1);
-					String genere1=(String)genretemp.get("genere1");
-					String genere2=(String)genretemp2.get("genere2");
+			JSONObject genretemp=(JSONObject)jsongeneri.get(0);
+			JSONObject genretemp2=(JSONObject)jsongeneri.get(1);
+			String genere1=(String)genretemp.get("genere1");
+			String genere2=(String)genretemp2.get("genere2");
 					
-					generi.add(genere1);
-					generi.add(genere2);
+			generi.add(genere1);
+			generi.add(genere2);
 				
 				
-				JSONArray jsonperiodo=(JSONArray)Body.get("periodo");
+			JSONArray jsonperiodo=(JSONArray)Body.get("periodo");
 			
-					JSONObject periodotemp=(JSONObject)jsonperiodo.get(0);
-					JSONObject periodotemp2=(JSONObject)jsonperiodo.get(1);
-					String periodo1=(String)periodotemp.get("inizio");
-					String periodo2=(String)periodotemp2.get("fine");
+			JSONObject periodotemp=(JSONObject)jsonperiodo.get(0);
+			JSONObject periodotemp2=(JSONObject)jsonperiodo.get(1);
+			String periodo1=(String)periodotemp.get("inizio");
+			String periodo2=(String)periodotemp2.get("fine");
 					
-					periodo.add(periodo1);
-					periodo.add(periodo2);
+			periodo.add(periodo1);
+			periodo.add(periodo2);
 				
 			
 		} catch (ParseException e) {

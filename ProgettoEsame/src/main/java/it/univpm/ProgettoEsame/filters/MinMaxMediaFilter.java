@@ -30,15 +30,13 @@ public class MinMaxMediaFilter {
 	
 	public LocalDate dateConverter(String date) {
 
-		LocalDate locD = LocalDate.parse((CharSequence) date);
+		LocalDate localdate = LocalDate.parse((CharSequence) date);
 		
-		return locD;
+		return localdate;
 	
 	}
 	
 	public Vector<Evento> filtroperiodo(String inizio,String fine,Vector<Evento>eventidaFiltrare) {
-			
-			JSONObject result=new JSONObject();
 			
 			Vector<Evento>eventiFiltrati=new Vector<Evento>();
 			

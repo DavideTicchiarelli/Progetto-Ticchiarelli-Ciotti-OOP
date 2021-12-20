@@ -3,6 +3,8 @@ package it.univpm.ProgettoEsame.controller;
 import java.util.Vector;
 
 import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -28,11 +30,6 @@ public class TestTicketmasterController {
 	
 	@Autowired
 	private TicketmasterServiceImpl ticketmasterservice;
-	
-//	@GetMapping(value="/getStato")
-//	public ResponseEntity<Object>getStato(@RequestParam(name="stateCode",defaultValue="AZ")String stateCode){
-//		return new ResponseEntity<>(ticketmasterservice.toJSON(ticketmasterservice.getStatoAPI(stateCode)),HttpStatus.OK);
-//	}
     
 	@GetMapping(value="/getEvento")
 	public ResponseEntity<Object> getEventobyStato(@RequestParam(name="stateCode",defaultValue="AZ") String stateCode) {
@@ -54,6 +51,22 @@ public class TestTicketmasterController {
 		return new ResponseEntity<>(stats.GenreEventi(ticketmasterservice.getStatoEvents(stateCode),genre),HttpStatus.OK);
 	
 	}
+	
+	@GetMapping(value="/stats")
+	public ResponseEntity<Object>getStats(@RequestParam(name="stateCode")String stateCode,@RequestBody String body) throws ParseException{
+		MinMaxMediaFilter filtro=new MinMaxMediaFilter();
+		
+		JSONObject Body;
+		Body= (JSONObject)new JSONParser().parse(body);
+		JSONObject periodo=(JSONObject)Body.get("periodo");
+		String inizio=(String)periodo.get("inizio");
+		String fine=(String)periodo.get("fine");
+		
+
+		return new ResponseEntity<>(filtro.filtroPeriodo(inizio,fine,ticketmasterservice.getStatoEvents(stateCode)),HttpStatus.OK);
+
+	}
+	
 	
 	@GetMapping(value="/eventiMensili")
 	public ResponseEntity<Object>getEventiMensili(@RequestParam(name="stateCode")String stateCode){

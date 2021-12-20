@@ -12,7 +12,6 @@ public class EventStats {
 	TicketmasterServiceImpl service=new	TicketmasterServiceImpl();
 	private int[]monthsEvents=new int[12];
 	
-	@SuppressWarnings("unchecked")
 	public int[] MonthsEvents(String stateCode) {
 
 		Vector<Evento>eventiPerStato=new Vector<Evento>();
