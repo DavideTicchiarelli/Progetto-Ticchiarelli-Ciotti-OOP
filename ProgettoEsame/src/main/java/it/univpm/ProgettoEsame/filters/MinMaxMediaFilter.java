@@ -18,11 +18,7 @@ public class MinMaxMediaFilter {
 		Vector<Evento>eventiFiltrati=new Vector<Evento>();
 		
 		eventiFiltrati=filtroperiodo(inizio,fine,eventidaFiltrare);
-		Evento ev=new Evento();
-		for(int i=0;i<eventiFiltrati.size();i++)
-			ev=eventiFiltrati.get(i);
-		
-		result=stats.EventiMensili(ev.getStateCode());
+		result=stats.EventiMensiliperiodo(inizio,fine,eventiFiltrati);
 		
 		return result;
 	}
@@ -44,12 +40,12 @@ public class MinMaxMediaFilter {
 			LocalDate dataFinale=dateConverter(fine);
 			
 			for(Evento ev:eventidaFiltrare) {
-				if(dataFinale.isAfter(ev.getDate())&&dataIniziale.isBefore(ev.getDate()))
+				if((dataFinale.isAfter(ev.getDate())||ev.getDate().isEqual(dataFinale))&&(dataIniziale.isBefore(ev.getDate())||ev.getDate().isEqual(dataIniziale)))
 					eventiFiltrati.add(ev);
 			}
 			
 			return eventiFiltrati;
+			
 		}
-	
-	
+
 }

@@ -353,8 +353,6 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 		GenreFilter filtro=new GenreFilter();
 		MinMaxMediaFilter filter=new MinMaxMediaFilter();
 		Vector<Evento>eventi=new Vector<Evento>();
-		BodyEventi eb;
-		
 	
 		eventi=(filtro.Filtrogenere(genere, getStatoEvents(statecode)));
 		

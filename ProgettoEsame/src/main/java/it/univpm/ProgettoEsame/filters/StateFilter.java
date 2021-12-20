@@ -20,8 +20,7 @@ public JSONObject FiltroStati(String stato, Vector<Evento> eventiDaFiltrare) {
 			
 			if(stato.equals(eventiTemp.getStateCode()))
 				eventiFiltrati.add(eventiTemp);
-				
-			
+
 		}
 	
 		return 	stats.TotEventi(eventiFiltrati, stato);

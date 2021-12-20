@@ -51,14 +51,6 @@ public class TestTicketmasterController {
 		return new ResponseEntity<>(stats.GenreEventi(ticketmasterservice.getStatoEvents(stateCode),genre),HttpStatus.OK);
 	}
 	
-	@GetMapping(value="/stats")
-	public ResponseEntity<Object>getStats(@RequestParam(name="stateCode")String stateCode) throws ParseException{
-		MinMaxMedia stats=new MinMaxMedia();
-	
-		return new ResponseEntity<>(stats.EventiMensili(stateCode),HttpStatus.OK);
-	}
-	
-	
 	@GetMapping(value="/eventiMensili")
 	public ResponseEntity<Object>getEventiMensili(@RequestParam(name="stateCode")String stateCode){
 		MinMaxMedia stats=new MinMaxMedia();
@@ -91,7 +83,7 @@ public class TestTicketmasterController {
     }
 	 */
 	@SuppressWarnings("unchecked")
-	@RequestMapping(value="/Eventi", method=RequestMethod.POST)
+	@RequestMapping(value="/Eventi",method=RequestMethod.POST)
 	public ResponseEntity<Object> getEventi(@RequestBody String body){
 
 		JSONObject risultato=new JSONObject();
