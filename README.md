@@ -4,7 +4,7 @@
 <h1 align="center"> Eventi USA TicketMaster </h1>
  
 
-## **Sommario:**
+## **Sommario**
 
 * [Introduzione](#introduzione)
 * [Installazione](#installazione)
