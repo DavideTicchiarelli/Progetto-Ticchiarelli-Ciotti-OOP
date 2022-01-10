@@ -4,6 +4,7 @@ import java.util.Vector;
 
 import org.json.simple.JSONObject;
 
+import it.univpm.ProgettoEsame.exceptions.EventiException;
 import it.univpm.ProgettoEsame.model.Evento;
 import it.univpm.ProgettoEsame.service.TicketmasterServiceImpl;
 
@@ -12,7 +13,7 @@ public class GenreStats {
 	TicketmasterServiceImpl service=new	TicketmasterServiceImpl();
 	
 	@SuppressWarnings("unchecked")
-	public JSONObject GenreEventi(Vector<Evento>eventiFiltrati,String genre) {
+	public JSONObject GenreEventi(Vector<Evento>eventiFiltrati,String genre) throws EventiException {
 		
 		int contGenre=0;
 		
@@ -29,6 +30,9 @@ public class GenreStats {
 			
 		}
 		
+		if(eventiFiltrati.isEmpty()) {
+			throw new EventiException("Nessun evento per il genere "+ev.getGenere());
+		}
 		obj.put("in "+ev.getStato(), contGenre);
 		return obj;
 	}
