@@ -14,7 +14,7 @@ import org.junit.jupiter.api.Test;
 import it.univpm.ProgettoEsame.model.Evento;
 import it.univpm.ProgettoEsame.service.TicketmasterServiceImpl;
 
-class toJSONtest {
+class ToJSONtest {
 
 	Evento ev;
 	Vector <Evento> eventi;
@@ -22,8 +22,9 @@ class toJSONtest {
 	
 	@BeforeEach
 	void setUp() throws Exception {
-		ev=new Evento();
 		eventi=new Vector<Evento>();
+		ev=new Evento();
+		test=new TicketmasterServiceImpl();
 	}
 
 	@AfterEach
@@ -36,9 +37,9 @@ class toJSONtest {
 		
 	String tempDate="2022-01-22";
 	LocalDate date= LocalDate.parse(tempDate);
-	
+
 		ev.setNome("Phoenix Suns vs. Indiana Pacers");
-		ev.setUrl("https://www.ticketmaster.com/phoenix-suns-vs-indiana-pacers-phoenix-arizona-01-22-2022/event/19005B13479C3E4B\"");
+		ev.setUrl("https://www.ticketmaster.com/phoenix-suns-vs-indiana-pacers-phoenix-arizona-01-22-2022/event/19005B13479C3E4B");
 		ev.setCitta("Phoenix");
 		ev.setStato("Arizona");
 		ev.setStateCode("AZ");
@@ -51,7 +52,7 @@ class toJSONtest {
 		JSONObject obj = new JSONObject();
 		JSONArray arr = new JSONArray ();
 		
-		for (int i =0; i<arr.size();i++) {
+		for (int i=0;i<eventi.size();i++) {
 			
 			JSONObject Ev=new JSONObject();
 
@@ -73,7 +74,8 @@ class toJSONtest {
 		}
 		
 		obj.put("events", arr);
-		assertEquals (obj, test.toJSON(eventi));
+		JSONObject result=test.toJSON(eventi);
+		assertEquals (obj, result);
 	}
 
 }
