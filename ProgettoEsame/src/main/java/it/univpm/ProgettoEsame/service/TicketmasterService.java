@@ -7,7 +7,6 @@ import org.json.simple.JSONObject;
 
 import it.univpm.ProgettoEsame.exceptions.EventiException;
 import it.univpm.ProgettoEsame.model.Evento;
-import it.univpm.ProgettoEsame.model.Stato;
 
 
 public interface TicketmasterService {

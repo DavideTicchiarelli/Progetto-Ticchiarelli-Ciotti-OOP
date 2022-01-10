@@ -1,11 +1,7 @@
 package it.univpm.ProgettoEsame.stats;
 
-import java.time.LocalDate;
 import java.util.Vector;
-
 import org.json.simple.JSONObject;
-
-import it.univpm.ProgettoEsame.filters.MinMaxMediaFilter;
 import it.univpm.ProgettoEsame.model.Evento;
 import it.univpm.ProgettoEsame.service.TicketmasterServiceImpl;
 
