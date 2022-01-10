@@ -225,7 +225,7 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 
 	}
 	
-	@Override
+@Override
 	public JSONObject getResultEventi(String statecode,String genere,String inizio,String fine) {
 		
 		GenreFilter filtro=new GenreFilter();
