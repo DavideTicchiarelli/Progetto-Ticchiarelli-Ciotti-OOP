@@ -15,6 +15,8 @@ import org.json.simple.JSONValue;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import org.springframework.stereotype.Service;
+
+import it.univpm.ProgettoEsame.exceptions.EventiException;
 import it.univpm.ProgettoEsame.filters.GenreFilter;
 import it.univpm.ProgettoEsame.filters.MinMaxMediaFilter;
 import it.univpm.ProgettoEsame.model.BodyEventi;
@@ -64,7 +66,7 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 	
 
 	@Override
-	public Vector<Evento> getStatoEvents(String stateCode) {
+	public Vector<Evento> getStatoEvents(String stateCode) throws EventiException{
 
 		JSONObject obj=getJSONEventoStato(stateCode);
 
@@ -117,6 +119,9 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 			
 			eventi.add(ev);
 		}
+		if (eventi.isEmpty()) {
+			throw new EventiException("Il vettore di eventi è vuoto");
+		}
 		return eventi;
 	}
 
@@ -153,6 +158,8 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 
 		return obj;
 	}
+	
+	
 	/*
 	 * {
     "stati":[
@@ -178,6 +185,8 @@ public class TicketmasterServiceImpl implements TicketmasterService {
         }
     }
 	 */
+	
+	
 	public BodyEventi readBody(String body) {
 		Vector<String>stati=new Vector<String>();
 		Vector<String>generi=new Vector<String>();
@@ -226,13 +235,17 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 	}
 	
 @Override
-	public JSONObject getResultEventi(String statecode,String genere,String inizio,String fine) {
+	public JSONObject getResultEventi(String statecode,String genere,String inizio,String fine) throws EventiException {
 		
 		GenreFilter filtro=new GenreFilter();
 		MinMaxMediaFilter filter=new MinMaxMediaFilter();
 		Vector<Evento>eventi=new Vector<Evento>();
 	
 		eventi=(filtro.Filtrogenere(genere, getStatoEvents(statecode)));
+		
+		if(eventi.isEmpty()) {
+			throw new EventiException("Il vettore di eventi per lo stato è vuoto");
+		}
 		
 		JSONObject result=toJSON(filter.filtroperiodo(inizio,fine,eventi));
 		return result ;

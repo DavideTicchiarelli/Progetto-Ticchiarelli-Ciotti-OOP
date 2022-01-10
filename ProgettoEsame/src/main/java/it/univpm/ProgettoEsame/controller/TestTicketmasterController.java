@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import it.univpm.ProgettoEsame.exceptions.EventiException;
 import it.univpm.ProgettoEsame.filters.GenreFilter;
 import it.univpm.ProgettoEsame.filters.MinMaxMediaFilter;
 import it.univpm.ProgettoEsame.filters.StateFilter;
@@ -33,7 +34,14 @@ public class TestTicketmasterController {
     
 	@GetMapping(value="/getEvento")
 	public ResponseEntity<Object> getEventobyStato(@RequestParam(name="stateCode",defaultValue="AZ") String stateCode) {
-			return new ResponseEntity<>(ticketmasterservice.toJSON(ticketmasterservice.getStatoEvents(stateCode)),HttpStatus.OK);
+		JSONObject result = new JSONObject();
+			try {
+				result=ticketmasterservice.toJSON(ticketmasterservice.getStatoEvents(stateCode));
+			} catch (EventiException e) {
+				e.printStackTrace();
+			}
+			return new ResponseEntity<>(result,HttpStatus.OK);
+			
     }
 	
 	@GetMapping(value="/numEventi")
@@ -47,8 +55,13 @@ public class TestTicketmasterController {
 	public ResponseEntity<Object>getNumGeneri(@RequestParam(name="stateCode")String stateCode,
 												@RequestParam(name="genre")String genre){
 		GenreStats stats=new GenreStats();
-		
-		return new ResponseEntity<>(stats.GenreEventi(ticketmasterservice.getStatoEvents(stateCode),genre),HttpStatus.OK);
+		JSONObject result=new JSONObject();
+		try {
+			result=stats.GenreEventi(ticketmasterservice.getStatoEvents(stateCode),genre);
+		} catch (EventiException e) {
+			e.printStackTrace();
+		}
+		return new ResponseEntity<>(result,HttpStatus.OK);
 	}
 	
 	@GetMapping(value="/eventiMensili")
@@ -116,8 +129,17 @@ public class TestTicketmasterController {
 		String fine=periodo.get(1);
 	
 		
-		eventidaFiltrare=ticketmasterservice.getStatoEvents(stato1);
-		eventidaFiltrare2=ticketmasterservice.getStatoEvents(stato2);
+		try {
+			eventidaFiltrare=ticketmasterservice.getStatoEvents(stato1);
+		} catch (EventiException e) {
+			e.printStackTrace();
+		}
+		
+		try {
+			eventidaFiltrare2=ticketmasterservice.getStatoEvents(stato2);
+		} catch (EventiException e) {
+			e.printStackTrace();
+		}
 
 		eventiFiltratiPerStati=filtrostati.FiltroStati(stato1,eventidaFiltrare);
 		eventiFiltratiPerGenere=filtrogenere.FiltroGenere(genere1,eventidaFiltrare);
@@ -133,12 +155,22 @@ public class TestTicketmasterController {
 		risultato.put("Totale Eventi in "+ev1.getStato(),eventiFiltratiPerStati);		
 		risultato.put("Eventi per il genere "+genere1,eventiFiltratiPerGenere);
 		risultato.put("Statistiche periodiche di eventi in "+ev1.getStato(), eventiFiltratiPeriodo);
-		risultato.put("eventi in "+ev1.getStato(),ticketmasterservice.getResultEventi(stato1,genere1,inizio,fine));
+		
+		try {
+			risultato.put("eventi in "+ev1.getStato(),ticketmasterservice.getResultEventi(stato1,genere1,inizio,fine));
+		} catch (EventiException e) {
+			e.printStackTrace();
+		}
 		
 		risultato.put("Totale Eventi in "+ev2.getStato(),eventiFiltratiPerStati2);
 		risultato.put("Eventi per il genere "+genere2,eventiFiltratiPerGenere2);
 		risultato.put("Statistiche periodiche di eventi in "+ev2.getStato(), eventiFiltratiPeriodo2);	
-		risultato.put("eventi in "+ev2.getStato(),ticketmasterservice.getResultEventi(stato2,genere2,inizio,fine));
+		
+		try {
+			risultato.put("eventi in "+ev2.getStato(),ticketmasterservice.getResultEventi(stato2,genere2,inizio,fine));
+		} catch (EventiException e) {
+			e.printStackTrace();
+		}
 
 		return new ResponseEntity<>(risultato,HttpStatus.OK);
 	}

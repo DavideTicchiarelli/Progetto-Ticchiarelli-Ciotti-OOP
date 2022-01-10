@@ -4,6 +4,7 @@ import java.util.Vector;
 
 import org.json.simple.JSONObject;
 
+import it.univpm.ProgettoEsame.exceptions.EventiException;
 import it.univpm.ProgettoEsame.filters.MinMaxMediaFilter;
 import it.univpm.ProgettoEsame.model.Evento;
 import it.univpm.ProgettoEsame.service.TicketmasterServiceImpl;
@@ -17,7 +18,12 @@ public class EventStats {
 	public int[] MonthsEvents(String stateCode) {
 
 		Vector<Evento>eventiPerStato=new Vector<Evento>();
-		eventiPerStato=service.getStatoEvents(stateCode);
+		
+		try {
+			eventiPerStato=service.getStatoEvents(stateCode);
+		} catch (EventiException e) {
+			e.printStackTrace();
+		}
 		Evento ev=new Evento();
 
 		monthsEvents=new int[12];
