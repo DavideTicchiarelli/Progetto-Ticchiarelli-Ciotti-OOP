@@ -27,7 +27,7 @@ class MinMaxMediaStatsTest {
 	}
 
 	/**
-	 * per distruggere ciò che è stato inizializzato dal metodo setUp.
+	 * Serve per distruggere ciò che è stato inizializzato dal metodo setUp.
 	 * @throws Exception
 	 */
 	@AfterEach
@@ -56,7 +56,7 @@ class MinMaxMediaStatsTest {
 	}
 	
 	/**
-	 * che verifica se il calcolo del massimo del vettore v è corretto.
+	 * Test che verifica se il calcolo del massimo del vettore v è corretto.
 	 */
 	@Test
 	void testMaxEventi() {

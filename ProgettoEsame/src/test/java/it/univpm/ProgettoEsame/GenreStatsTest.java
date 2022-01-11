@@ -11,12 +11,21 @@ import it.univpm.ProgettoEsame.exceptions.EventiException;
 import it.univpm.ProgettoEsame.model.Evento;
 import it.univpm.ProgettoEsame.stats.GenreStats;
 
+/**
+ * Classe che testa il funzionamento del metodo GenreEventi (nella classe GenreStats).
+ *
+ *
+ */
 class GenreStatsTest {
 	
 	Evento ev,ev2;
 	Vector<Evento>eventiFiltrati;
 	GenreStats test;
 	
+	/**
+	 * Inizializza i componenti necessari per il test.
+	 * @throws Exception
+	 */
 	@BeforeEach
 	void setUp() throws Exception {
 		eventiFiltrati=new Vector<Evento>();
@@ -25,10 +34,18 @@ class GenreStatsTest {
 		test=new GenreStats();
 	}
 
+	/**
+	 * Serve per distruggere ciò che è stato inizializzato dal metodo setUp.
+	 * @throws Exception
+	 */
 	@AfterEach
 	void tearDown() throws Exception {
 	}
 
+	/**
+	 * Test che verifica il calcolo del numero totale di eveti per un determinato genere.
+	 * @throws EventiException
+	 */
 	@SuppressWarnings("unchecked")
 	@Test
 	void test() throws EventiException {

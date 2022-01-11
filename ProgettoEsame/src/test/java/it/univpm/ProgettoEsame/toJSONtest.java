@@ -42,7 +42,7 @@ class ToJSONtest {
 	}
 
 	/**
-	 * Questo Test verifica se l'oggetto eventi viene converito correttamente in JSONObject.
+	 * Test che verifica se l'oggetto eventi viene convertito correttamente in JSONObject.
 	 */
 	@SuppressWarnings("unchecked")
 	@Test
