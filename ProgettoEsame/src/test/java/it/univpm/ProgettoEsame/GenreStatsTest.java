@@ -1,20 +1,17 @@
 package it.univpm.ProgettoEsame;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-
 import java.time.LocalDate;
 import java.util.Vector;
-
 import org.json.simple.JSONObject;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
 import it.univpm.ProgettoEsame.exceptions.EventiException;
 import it.univpm.ProgettoEsame.model.Evento;
 import it.univpm.ProgettoEsame.stats.GenreStats;
 
-class GenreTest {
+class GenreStatsTest {
 	
 	Evento ev,ev2;
 	Vector<Evento>eventiFiltrati;
