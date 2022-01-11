@@ -34,7 +34,7 @@ class ToJSONtest {
 	}
 
 	/**
-	 * Serve per distruggere ciò che è stato inizializzato dal metodo setUp
+	 * Serve per distruggere ciò che è stato inizializzato dal metodo setUp.
 	 * @throws Exception
 	 */
 	@AfterEach
