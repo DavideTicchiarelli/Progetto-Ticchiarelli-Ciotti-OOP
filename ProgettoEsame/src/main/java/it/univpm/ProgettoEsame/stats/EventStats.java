@@ -8,13 +8,24 @@ import it.univpm.ProgettoEsame.exceptions.EventiException;
 import it.univpm.ProgettoEsame.filters.MinMaxMediaFilter;
 import it.univpm.ProgettoEsame.model.Evento;
 import it.univpm.ProgettoEsame.service.TicketmasterServiceImpl;
-
+/**
+ * 
+ * EventsStats classe che fornisce le statistiche degli eventi.
+ *
+ */
 public class EventStats {
 
 	TicketmasterServiceImpl service=new	TicketmasterServiceImpl();
 	private int[]monthsEvents=new int[12];
 	private int[] months;
 	
+	
+	/**
+	 * Metodo che analizza l'API e restituisce un vettore contente il numero di eventi mensili.
+	 * 
+	 * @param stateCode Statecode dello stato di cui si vogliono visualizzare gli eventi.
+	 * @return monthsEvents Vettore contente il numero di eventi mensili.
+	 */
 	public int[] MonthsEvents(String stateCode) {
 
 		Vector<Evento>eventiPerStato=new Vector<Evento>();
@@ -58,6 +69,15 @@ public class EventStats {
 
 	}
 	
+	/**
+	 * 
+	 * Metodo che analizza l'API e restituisce un vettore contente il numero di eventi mensili nel periodo personalizzato.
+	 * 
+	 * @param inizio Data inizio del periodo personalizzato.
+	 * @param fine   Data fine del periodo personalizzato
+	 * @param eventiFiltrati Vettore di eventi contente eventi filtrati per periodo.
+	 * @return months Vettore contente il numero di eventi mensili nel periodo personalizzato.
+	 */
 	public int[] MonthsEventsPeriodo(String inizio,String fine,Vector<Evento>eventiFiltrati) {
 
 		Evento ev=new Evento();
@@ -100,7 +120,14 @@ public class EventStats {
 
 	}
 	
-
+/**
+ *
+ * Metodo che fornisce il JSONObject contente il numero totale di eventi di uno Stato (utilizzato nello StateFilter).
+ * 
+ * @param eventidaFiltrare Vettore contente gli eventi da filtrare.
+ * @param stateCode Statecode dello stato di cui si vogliono visualizzare gli eventi.
+ * @return obj JSONObject contenente il numero totale di eventi di uno Stato.
+ */
 	@SuppressWarnings("unchecked")
 	public JSONObject TotEventi(Vector<Evento>eventidaFiltrare,String stateCode) {
 		
@@ -119,6 +146,13 @@ public class EventStats {
 		
 	}
 	
+	/**
+	 *
+	 * Metodo che fornisce il JSONObject contente il numero totale di eventi di uno Stato (utilizzato nel Controller).
+	 * 
+	 * @param stateCode Statecode dello stato di cui si vogliono visualizzare gli eventi.
+	 * @return obj JSONObject contenente il numero totale di eventi di uno Stato.
+	 */
 	@SuppressWarnings("unchecked")
 	public JSONObject totEventi(String stateCode) {
 

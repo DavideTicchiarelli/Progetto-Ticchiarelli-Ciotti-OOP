@@ -8,7 +8,10 @@ import org.json.simple.JSONObject;
 import it.univpm.ProgettoEsame.exceptions.EventiException;
 import it.univpm.ProgettoEsame.model.Evento;
 
-
+/**
+ *Interfaccia di TicketmasterServiceImpl che contiene i metodi richiamati dal Controller
+ *
+ */
 public interface TicketmasterService {
 	
 	public abstract JSONObject getJSONEventoStato(String stateCode);
