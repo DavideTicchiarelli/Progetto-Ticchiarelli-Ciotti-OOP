@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"it.univpm.ProgettoEsame.filters","l":"MinMaxMediaFilter"}];updateSearchResults();
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"it.univpm.ProgettoEsame.model","l":"BodyEventi"}];updateSearchResults();

@@ -1,5 +1,10 @@
 package it.univpm.ProgettoEsame.exceptions;
 
+/**
+ * 
+ * Classe che gestisce le eccezioni personalizzate
+ *
+ */
 public class EventiException extends Exception {
 	
 	 public EventiException() {

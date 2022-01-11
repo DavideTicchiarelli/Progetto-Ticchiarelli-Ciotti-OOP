@@ -34,7 +34,7 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 	/**
 	 * Metodo che analizza l'API di ticketmaster e restituisce il JSONObject filtrato per statecode.
 	 * 
-	 * @param stateCode statecode dello stato di cui si vogliono visualizzare gli eventi.
+	 * @param stateCode Statecode dello stato di cui si vogliono visualizzare gli eventi.
 	 * @return evento JSONObject dell'evento.
 	 */
 	@Override
