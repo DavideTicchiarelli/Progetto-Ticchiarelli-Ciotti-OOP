@@ -4,16 +4,30 @@ import java.util.Vector;
 import org.json.simple.JSONObject;
 import it.univpm.ProgettoEsame.model.Evento;
 import it.univpm.ProgettoEsame.service.TicketmasterServiceImpl;
-
+/**
+ * 
+ * Classe che fornisce le statische del numero minimo,massimo e medio di eventi mensili o di un periodo personalizzato.
+ *
+ */
 public class MinMaxMedia {
 
 	private int min;
 	private int max;
 	private double media;
 	TicketmasterServiceImpl service=new	TicketmasterServiceImpl();
-
+	
+/**
+ * Costruttore della classe di default.
+ */
 	public MinMaxMedia() {}
-
+	
+/**
+ * 
+ * Metodo che ordina il vettore contenente il numero di eventi di uno stato in un determinato mese (in modo crescente).
+ * 
+ * @param numEventi Vettore da ordinare contente il numero di eventi mensili.
+ * @return numEventi Vettore ordinato in modo crescente.
+ */
 	public int[] sortSelectedEvents(int[] numEventi) {
 
 		int n=numEventi.length;
@@ -35,17 +49,35 @@ public class MinMaxMedia {
 		return numEventi;	
 	}
 	
+	/**
+	 * Metodo che restituisce il numero minimo di eventi.
+	 * 
+	 * @param numeroEventi Vettore contenente il numero di eventi.
+	 * @return min Numero minimo di eventi.
+	 */
 	public int minEventi(int[]numeroEventi) {
 		sortSelectedEvents(numeroEventi);
 		return this.min=numeroEventi[0];	
 	}
 
+	/**
+	 * Metodo che restituisce il numero massimo di eventi.
+	 * 
+	 * @param numeroEventi Vettore contenente il numero di eventi.
+	 * @return max Numero massimo di eventi.
+	 */ 
 	public int maxEventi(int[]numeroEventi) {
 		int max=numeroEventi.length;
 		sortSelectedEvents(numeroEventi);
 		return this.max=numeroEventi[max-1];
 	}
 	
+	/**
+	 * Metodo che restituisce la media degli eventi.
+	 * 
+	 * @param numeroEventi Vettore contenente il numero di eventi.
+	 * @return media Media degli eventi in un determinato periodo.
+	 */
 	public double mediaEventi(int[]numeroEventi) {
 		int cont=0;
 
@@ -56,6 +88,12 @@ public class MinMaxMedia {
 		return this.media;
 	}		
 	
+	/**
+	 * 
+	 * Metodo che fornisce il numero minimo,massimo e medio di eventi mensili e restituisce il corrispondente JSONObject.
+	 * @param stateCode statecode dello stato di cui si vogliono visualizzare gli eventi.
+	 * @return object JSONObject contente il nummero minimo,massimo e medio di eventi mensili.
+	 */
 	@SuppressWarnings("unchecked")
     public JSONObject EventiMensili(String stateCode) {
 
@@ -75,6 +113,14 @@ public class MinMaxMedia {
         return object;
     }
 	
+	/**
+	 * 
+	 * Metodo che fornisce il numero minimo,massimo e medio di eventi in un periodo personalizzato e restituisce il corrispondente JSONObject.
+	 * @param inizio Data inizio del periodo personalizzato.
+	 * @param fine   Data fine del periodo personalizzato.
+	 * @param eventiFiltrati Vettore contente gli eventi filtrati per periodo.
+	 * @return obj JSONObject contente il nummero minimo,massimo e medio di eventi in un periodo personalizzato.
+	 */
 	@SuppressWarnings("unchecked")
     public JSONObject EventiMensiliperiodo(String inizio,String fine,Vector<Evento>eventiFiltrati) {
 
