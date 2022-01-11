@@ -190,7 +190,7 @@ public class TestTicketmasterController {
 		Evento ev2=new Evento();
 		ev2=eventidaFiltrare2.get(0);
 
-		risultato.put("Totale Eventi in "+ev1.getStato(),eventiFiltratiPerStati);		
+		risultato.put("Eventi in "+ev1.getStato(),eventiFiltratiPerStati);		
 		risultato.put("Eventi per il genere "+genere1,eventiFiltratiPerGenere);
 		risultato.put("Statistiche periodiche di eventi in "+ev1.getStato(), eventiFiltratiPeriodo);
 		
@@ -200,7 +200,7 @@ public class TestTicketmasterController {
 			e.printStackTrace();
 		}
 		
-		risultato.put("Totale Eventi in "+ev2.getStato(),eventiFiltratiPerStati2);
+		risultato.put("Eventi in "+ev2.getStato(),eventiFiltratiPerStati2);
 		risultato.put("Eventi per il genere "+genere2,eventiFiltratiPerGenere2);
 		risultato.put("Statistiche periodiche di eventi in "+ev2.getStato(), eventiFiltratiPeriodo2);	
 		

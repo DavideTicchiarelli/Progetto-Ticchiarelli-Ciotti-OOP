@@ -140,7 +140,7 @@ public class EventStats {
 		for(int i=0;i<monthsEvents.length;i++) {
 			eventiTot+=monthsEvents[i];	
 		}
-		obj.put("eventi", eventiTot);	
+		obj.put("Totale", eventiTot);	
 
 		return obj;
 		
@@ -166,7 +166,7 @@ public class EventStats {
 			eventiTot+=monthsEvents[i];	
 			
 		}
-		obj.put("eventi", eventiTot);	
+		obj.put("Totale", eventiTot);	
 
 		return obj;
 		
