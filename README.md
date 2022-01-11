@@ -169,7 +169,7 @@ La risposta della rotta è la seguente:
 ## JUnit Test
 
 ## Documentazione JavaDoc
-Il codice java dell'applicazione "Eventi USA TicketMaster" è interamente documentato attraverso Javadoc.
+Il codice java dell'applicazione "Eventi USA TicketMaster" è interamente documentato attraverso [Javadoc](https://github.com/DavideTicchiarelli/Progetto-esame-Ticchiarelli-Ciotti-OOP/tree/master/ProgettoEsame/doc).
 
 ## Software Utilizzati
 * L'IDE [Eclipse](https://www.eclipse.org/downloads/) per la scrittura del codice dell'intero applicativo
