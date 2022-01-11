@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"it.univpm.ProgettoEsame.model","l":"BodyEventi"}];updateSearchResults();
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"it.univpm.ProgettoEsame.model","l":"Evento"}];updateSearchResults();

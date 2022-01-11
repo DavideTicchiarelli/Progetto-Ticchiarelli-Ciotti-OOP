@@ -25,7 +25,7 @@ public class BodyEventi {
 	private Vector<String>periodo;
 	
 	/**
-	 * Costruttore della classe BodyEventi
+	 * Costruttore dell'oggetto BodyEventi
 	 * @param stateCode Vettore contenente gli Statecode degli stati.
 	 * @param generi    Vettore contenente i generi.
 	 * @param periodo   Vettore contenente le date del periodo personalizzato.
