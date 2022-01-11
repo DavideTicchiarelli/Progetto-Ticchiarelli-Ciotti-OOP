@@ -50,20 +50,26 @@ La rotta restituisce un JSONObject contenente tutti gli eventi e le relative inf
 
 La rotta restituisce un JSONObject contenente il numero totale eventi di un determinato stato, il parametro da passare è lo stateCode. 
 
-![WhatsApp Image 2022-01-11 at 17 09 15](https://user-images.githubusercontent.com/95363767/148978981-f40905a5-7579-4194-9c09-70e1839b127d.jpeg)
+<img width="450" alt="Schermata 2022-01-11 alle 17 08 39" src="https://user-images.githubusercontent.com/93603411/148987410-294856ba-6a61-4b9f-b0f1-8ec5d0de2c60.png">
+
+
 
 ## 3.   /numGenere?stateCode=' '&genre=' '
 
 La rotta restituisce un JSONObject contenente il numero totale di eventi di un determinato stato filtrati per un determinato genere, i parametri da passare sono lo stateCode 
 e il genere.
 
-![WhatsApp Image 2022-01-11 at 17 13 03](https://user-images.githubusercontent.com/95363767/148980251-81c0e671-310e-404c-a812-f62102cd1a90.jpeg)
+<img width="513" alt="Schermata 2022-01-11 alle 17 12 21" src="https://user-images.githubusercontent.com/93603411/148987789-2674ac72-ab8c-4fdf-8baf-da88efcf3fc0.png">
+
+
 
 ## 4.   /eventiMensili?stateCode=' '
 
 La rotta restituisce un JSONObject contenente il numero minimo/massimo/medio di eventi di un determinato stato, il parametro da passare è lo stateCode.
 
-![WhatsApp Image 2022-01-11 at 17 21 10](https://user-images.githubusercontent.com/95363767/148981746-2fcc7b73-07bb-4596-a022-7455daee1c35.jpeg)
+<img width="486" alt="Schermata 2022-01-11 alle 17 20 31" src="https://user-images.githubusercontent.com/93603411/148988080-8aa158b5-0112-4755-814d-b95432ada883.png">
+
+
 
 ## 5.   /Eventi?
 
