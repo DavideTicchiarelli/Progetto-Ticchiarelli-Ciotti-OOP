@@ -6,10 +6,23 @@ import it.univpm.ProgettoEsame.exceptions.EventiException;
 import it.univpm.ProgettoEsame.model.Evento;
 import it.univpm.ProgettoEsame.service.TicketmasterServiceImpl;
 
+/**
+ * 
+ * Classe che fornisce le statistiche degli eventi per un determinato genere.
+ *
+ */
 public class GenreStats {
 
 	TicketmasterServiceImpl service=new	TicketmasterServiceImpl();
-	
+	/**
+	 * 
+	 * Classe che fornisce il numero totale di eventi per un determinato genere.
+	 * 
+	 * @param eventiFiltrati Vettore di eventi filtrati per un determinato genere.
+	 * @param genre Genere per il filtro.
+	 * @return obj JSONObject contente il numero di eventi per un determinato genere.
+	 * @throws EventiException se non è presente alcun evento per un determinato genere.
+	 */
 	@SuppressWarnings("unchecked")
 	public JSONObject GenreEventi(Vector<Evento>eventiFiltrati,String genre) throws EventiException {
 		

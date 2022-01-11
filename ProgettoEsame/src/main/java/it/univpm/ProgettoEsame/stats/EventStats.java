@@ -10,7 +10,7 @@ import it.univpm.ProgettoEsame.model.Evento;
 import it.univpm.ProgettoEsame.service.TicketmasterServiceImpl;
 /**
  * 
- * EventsStats classe che fornisce le statistiche degli eventi.
+ * Classe che fornisce le statistiche degli eventi di uno stato.
  *
  */
 public class EventStats {
