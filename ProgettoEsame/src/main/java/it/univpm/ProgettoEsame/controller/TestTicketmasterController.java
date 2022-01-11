@@ -1,6 +1,7 @@
 package it.univpm.ProgettoEsame.controller;
 
 import java.util.Vector;
+
 import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -23,12 +24,25 @@ import it.univpm.ProgettoEsame.stats.EventStats;
 import it.univpm.ProgettoEsame.stats.GenreStats;
 import it.univpm.ProgettoEsame.stats.MinMaxMedia;
 
+/**
+ * Classe che gestisce tutte le chiamate.
+ * 
+ * @author Niccolò Ciotti
+ * @author Davide Ticchiarelli
+ *
+ */
 @RestController
 public class TestTicketmasterController {
 	
 	@Autowired
 	private TicketmasterServiceImpl ticketmasterservice;
     
+	/**
+	 * Rotta di tipo GET che mostra tutti gli eventi e le relative informazioni di un determinato stato.
+	 * 
+	 * @param stateCode stateCode dello stato di cui si vogliono conoscere gli eventi.
+	 * @return insieme di eventi di un determinato stato.
+	 */
 	@GetMapping(value="/getEvento")
 	public ResponseEntity<Object> getEventobyStato(@RequestParam(name="stateCode",defaultValue="AZ") String stateCode) {
 		JSONObject result = new JSONObject();
@@ -41,6 +55,12 @@ public class TestTicketmasterController {
 			
     }
 	
+	/**
+	 * Rotta di tipo GET che mostra il numero totale di eventi per un determinato stato.
+	 * 
+	 * @param stateCode stateCode dello stato di cui si vogliono conoscere gli eventi.
+	 * @return il numero totale degli eventi.
+	 */
 	@GetMapping(value="/numEventi")
 	public ResponseEntity<Object>getNumEventi(@RequestParam(name="stateCode")String stateCode){
 		EventStats stats=new EventStats();
@@ -48,6 +68,13 @@ public class TestTicketmasterController {
 		return new ResponseEntity<>(stats.totEventi(stateCode),HttpStatus.OK);
 	}
 	
+	/**
+	 * Rotta di tipo GET che mostra il numero di eventi per un determinato genere.
+	 * 
+	 * @param stateCode stateCode dello stato di cui si vogliono conoscere gli eventi.
+	 * @param genre genere dell'evento.
+	 * @return il numero di eventi per un determinato genere.
+	 */
 	@GetMapping(value="/numGenere")
 	public ResponseEntity<Object>getNumGeneri(@RequestParam(name="stateCode")String stateCode,
 												@RequestParam(name="genre")String genre){
@@ -61,36 +88,50 @@ public class TestTicketmasterController {
 		return new ResponseEntity<>(result,HttpStatus.OK);
 	}
 	
+	/**
+	 * Rotta di tipo GET che fornisce il numero minimo/massimo/medio di eventi mensili di uno stato.
+	 * 
+	 * @param stateCode stateCode dello stato di cui si vogliono conoscere gli eventi.
+	 * @return il numero minimo/massimo/medio di eventi mensili di uno stato.
+	 */
 	@GetMapping(value="/eventiMensili")
 	public ResponseEntity<Object>getEventiMensili(@RequestParam(name="stateCode")String stateCode){
 		MinMaxMedia stats=new MinMaxMedia();
 		return new ResponseEntity<>(stats.EventiMensili(stateCode),HttpStatus.OK);
 	}
 	
-	/*
+	/**
+	 * Rotta di tipo POST che filtra in base a uno o piu stati, uno o piu generi
+	 * e in base ad un oeriodo personalizzato per il calcolo degli eventi.
+	 * 
+	 * Il body inserito dall' utente deve essere di questo tipo:
+	 * 
 	 * {
-    "stati":[
-       { 
-        "stato1":"AZ"
-        },
-       {
-         "stato2":"NC"
-        }
-    ],
-    "generi":[
-        {
-        "genere1":"Football"
-        },
-        {
-        "genere2":"Basketball"
-        }
-     ],
-    "periodo":
-        {
-        "inizio":"2022-01-01",
-        "fine":"2022-03-01"
-        }
-    }
+	 *	"stati":[
+     *  	{ 
+     *  	"stato1":"AZ"
+     * 	},
+  	 * {
+     *	"stato2":"NC"
+     *	}
+     * ],
+     *	"generi":[
+     *	{
+     *	"genere1":"Football"
+     *	},
+     *	{
+     *	"genere2":"Basketball"
+     *	}
+     * ],
+     *	"periodo":
+     *	{
+     *	"inizio":"2022-01-01",
+     *	"fine":"2022-03-01"
+     *	}
+     * }
+     * 
+     * @param body Body come indicato in precedenza.
+     * @return le statistiche filtrate in base ai parametri inseriti.
 	 */
 	@SuppressWarnings("unchecked")
 	@RequestMapping(value="/Eventi",method=RequestMethod.POST)

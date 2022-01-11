@@ -181,31 +181,32 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 
 	/**
 	 * Metodo che legge il body e crea l'oggetto di tipo BodyEventi.
-	 * Il body deve essere di questo tipo:
+	 * Il body inserito dall' utente deve essere di questo tipo:
+	 * 
 	 * {
-	    "stati":[
-	       { 
-	        "stato1":"AZ"
-	        },
-	       {
-	         "stato2":"NC"
-	        }
-	    ],
-	    "generi":[
-	        {
-	        "genere1":"Football"
-	        },
-	        {
-	        "genere2":"Basketball"
-	        }
-	     ],
-	    "periodo":
-	        {
-	        "inizio":"2022-01-01",
-	        "fine":"2022-03-01"
-	       	}
-    	}
-
+	 *	"stati":[
+     *  	{ 
+     *  	"stato1":"AZ"
+     * 	},
+  	 * {
+     *	"stato2":"NC"
+     *	}
+     * ],
+     *	"generi":[
+     *	{
+     *	"genere1":"Football"
+     *	},
+     *	{
+     *	"genere2":"Basketball"
+     *	}
+     * ],
+     *	"periodo":
+     *	{
+     *	"inizio":"2022-01-01",
+     *	"fine":"2022-03-01"
+     *	}
+     * }
+     * 
 	 *@param body Stringa del body in ingresso.
 	 *@return eb Oggetto di tipo BodyEventi.
 	 */
