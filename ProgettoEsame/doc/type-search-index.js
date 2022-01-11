@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"it.univpm.ProgettoEsame.filters","l":"GenreFilter"}];updateSearchResults();
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"it.univpm.ProgettoEsame.filters","l":"StateFilter"}];updateSearchResults();
