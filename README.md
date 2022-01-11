@@ -173,6 +173,13 @@ La risposta della rotta è la seguente:
 ```
 
 ## JUnit Test
+All'interno del progetto è presente anche un package di test:
+
+* Un test del metodo toJSON della classe TicketmasterServiceImpl che verifica se l'oggetto viene convertito correttamente in JSONObject.
+
+* Un test del metodo GenreEventi della classe GenreStats che verifica se il calcolo del numero totale di eveti per un determinato genere è corretto.
+
+* Un test di tre metodi della classe MinMaxMedia che verificano se il calcolo del minimo,massimo e medio di un vettore è corretto.
 
 ## Documentazione JavaDoc
 Il codice java dell'applicazione "Eventi USA TicketMaster" è interamente documentato attraverso [Javadoc](https://github.com/DavideTicchiarelli/Progetto-esame-Ticchiarelli-Ciotti-OOP/tree/master/ProgettoEsame/doc).
