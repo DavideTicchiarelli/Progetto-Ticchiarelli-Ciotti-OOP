@@ -75,13 +75,17 @@ public class TestTicketmasterController {
 	 * @param genre genere dell'evento.
 	 * @return il numero di eventi per un determinato genere.
 	 */
+	@SuppressWarnings("unchecked")
 	@GetMapping(value="/numGenere")
 	public ResponseEntity<Object>getNumGeneri(@RequestParam(name="stateCode")String stateCode,
 												@RequestParam(name="genre")String genre){
 		GenreStats stats=new GenreStats();
+		JSONObject obj=new JSONObject();
 		JSONObject result=new JSONObject();
 		try {
-			result=stats.GenreEventi(ticketmasterservice.getStatoEvents(stateCode),genre);
+			obj=stats.GenreEventi(ticketmasterservice.getStatoEvents(stateCode),genre);
+			result.put("Eventi", obj);
+			result.put("Lista", ticketmasterservice.getResultEventi(stateCode, genre));
 		} catch (EventiException e) {
 			e.printStackTrace();
 		}
@@ -195,7 +199,7 @@ public class TestTicketmasterController {
 		risultato.put("Statistiche periodiche di eventi in "+ev1.getStato(), eventiFiltratiPeriodo);
 		
 		try {
-			risultato.put("eventi in "+ev1.getStato(),ticketmasterservice.getResultEventi(stato1,genere1,inizio,fine));
+			risultato.put("eventi in "+ev1.getStato(),ticketmasterservice.getResultEventiPeriodo(stato1,genere1,inizio,fine));
 		} catch (EventiException e) {
 			e.printStackTrace();
 		}
@@ -205,7 +209,7 @@ public class TestTicketmasterController {
 		risultato.put("Statistiche periodiche di eventi in "+ev2.getStato(), eventiFiltratiPeriodo2);	
 		
 		try {
-			risultato.put("eventi in "+ev2.getStato(),ticketmasterservice.getResultEventi(stato2,genere2,inizio,fine));
+			risultato.put("eventi in "+ev2.getStato(),ticketmasterservice.getResultEventiPeriodo(stato2,genere2,inizio,fine));
 		} catch (EventiException e) {
 			e.printStackTrace();
 		}

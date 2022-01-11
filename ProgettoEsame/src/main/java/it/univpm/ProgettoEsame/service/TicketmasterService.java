@@ -17,7 +17,8 @@ public interface TicketmasterService {
 	public abstract JSONObject getJSONEventoStato(String stateCode);
 	public abstract Vector<Evento> getStatoEvents(String stateCode) throws EventiException;
 	public abstract JSONObject toJSON(Vector<Evento> stato);
-	public abstract JSONObject getResultEventi(String statecode,String genere,String inizio,String fine) throws EventiException;
+	public abstract JSONObject getResultEventiPeriodo(String statecode,String genere,String inizio,String fine) throws EventiException;
+	public abstract JSONObject getResultEventi(String statecode,String generre) throws EventiException;
 
 
 

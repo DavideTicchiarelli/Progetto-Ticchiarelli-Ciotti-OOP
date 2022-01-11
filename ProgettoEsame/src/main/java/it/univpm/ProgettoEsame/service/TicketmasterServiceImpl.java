@@ -268,7 +268,7 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 	 * @throws EventiException se il vettore filtrato è vuoto.
 	 */
 	@Override
-	public JSONObject getResultEventi(String statecode,String genere,String inizio,String fine) throws EventiException {
+	public JSONObject getResultEventiPeriodo(String statecode,String genere,String inizio,String fine) throws EventiException {
 
 		GenreFilter filtro=new GenreFilter();
 		MinMaxMediaFilter filter=new MinMaxMediaFilter();
@@ -281,6 +281,31 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 		}
 
 		JSONObject result=toJSON(filter.filtroperiodo(inizio,fine,eventi));
+		return result ;
+
+	}
+	
+	/**
+	 * Metodo che restituisce il risultato del JSONObject degli eventi filtrati per genere e stato.
+	 * 
+	 * @param statecode statecode dello stato di cui si vogliono visualizzare gli eventi.
+	 * @param genere Genere per il filtro.
+	 * @return result JSONObject degli eventi filtrati.
+	 * @throws EventiException se il vettore filtrato è vuoto.
+	 */
+	@Override
+	public JSONObject getResultEventi(String statecode,String genere) throws EventiException {
+
+		GenreFilter filtro=new GenreFilter();
+		Vector<Evento>eventi=new Vector<Evento>();
+
+		eventi=(filtro.Filtrogenere(genere, getStatoEvents(statecode)));
+
+		if(eventi.isEmpty()) {
+			throw new EventiException("Il vettore di eventi per lo stato è vuoto");
+		}
+
+		JSONObject result=toJSON(eventi);
 		return result ;
 
 	}
