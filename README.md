@@ -33,7 +33,137 @@ e offre i seguenti filtri:
 * da terminale entrare nella cartella e digitare il seguente comando (git bash) :  
 `git clone https://github.com/DavideTicchiarelli/Progetto-esame-Ticchiarelli-Ciotti-OOP`
 
-## Rotte 
+## Rotte
+
+Le richieste che l'utente può effettuare tramite Postman devono essere all'indirizzo
+```
+localhost:8080
+```
+
+## 1.   /getEvento?stateCode=' '
+
+La rotta restituisce un JSONObject contenente tutti gli eventi e le relative informazioni di un determinato stato passando come parametro il relativo stateCode. 
+
+![WhatsApp Image 2022-01-11 at 16 54 19](https://user-images.githubusercontent.com/95363767/148976420-e727fea2-392d-4d47-a5b3-9d2cf9284135.jpeg)
+
+## 2.   /numEventi?stateCode=' '
+
+La rotta restituisce un JSONObject contenente il numero totale eventi di un determinato stato, il parametro da passare è lo stateCode. 
+
+![WhatsApp Image 2022-01-11 at 17 09 15](https://user-images.githubusercontent.com/95363767/148978981-f40905a5-7579-4194-9c09-70e1839b127d.jpeg)
+
+## 3.   /numGenere?stateCode=' '&genre=' '
+
+La rotta restituisce un JSONObject contenente il numero totale di eventi di un determinato stato filtrati per un determinato genere, i parametri da passare sono lo stateCode 
+e il genere.
+
+![WhatsApp Image 2022-01-11 at 17 13 03](https://user-images.githubusercontent.com/95363767/148980251-81c0e671-310e-404c-a812-f62102cd1a90.jpeg)
+
+## 4.   /eventiMensili?stateCode=' '
+
+La rotta restituisce un JSONObject contenente il numero minimo/massimo/medio di eventi di un determinato stato, il parametro da passare è lo stateCode.
+
+![WhatsApp Image 2022-01-11 at 17 21 10](https://user-images.githubusercontent.com/95363767/148981746-2fcc7b73-07bb-4596-a022-7455daee1c35.jpeg)
+
+## 5.   /Eventi?
+
+Questa rotta è di tipo POST e richiede un body di questo tipo:
+
+```json
+{
+    "stati":[
+       { 
+        "stato1":"CA"
+        },
+       {
+         "stato2":"NC"
+        }
+    ],
+    "generi":[
+        {
+        "genere1":"Rock"
+        },
+        {
+        "genere2":"Hockey"
+        }
+     ],
+    "periodo":
+        {
+        "inizio":"2022-01-01",
+        "fine":"2022-10-01"
+        }
+    }
+```
+- **stati** è il JSONArray che contiene gli stateCode degli stati di cui si vuole fare statistica.Gli stateCode ammissibili si trovano nel file "statecodes.txt" all'interno della cartella resources.
+- **generi** è il JSONArray che contiene i generi degli eventi relativi al rispettivo stato di cui si vuole fare statistica.I generi ammissibili si trovano nel file "generi.txt" all'interno della cartella resources.
+- **generi** è il JSONObject che contiene l'inizio e la fine del periodo personalizzato degli eventi di cui si vuole fare la statistica. Inizio e fine devono essere forniti nel formato "yyyy-mm-dd".
+
+La risposta della rotta è la seguente:
+
+```json
+{
+    "Eventi per il genere Hockey": {
+        "in North Carolina": 1
+    },
+    "Eventi in California": {
+        "Totale": 20
+    },
+    "Statistiche periodiche di eventi in California": {
+        "numero medio di eventi": 2.0,
+        "numero massimo di eventi": 11,
+        "numero minimo di eventi": 0
+    },
+    "Eventi in North Carolina": {
+        "Totale": 20
+    },
+    "Statistiche periodiche di eventi in North Carolina": {
+        "numero medio di eventi": 2.0,
+        "numero massimo di eventi": 11,
+        "numero minimo di eventi": 0
+    },
+    "eventi in North Carolina": {
+        "events": [
+            {
+                "localTime": "19:00:00",
+                "city": "Raleigh",
+                "name": "Carolina Hurricanes vs. Pittsburgh Penguins",
+                "genre": "Hockey",
+                "stateCode": "NC",
+                "state": "North Carolina",
+                "localDate": "2022-03-04",
+                "url": "https://www.ticketmaster.com/carolina-hurricanes-vs-pittsburgh-penguins-raleigh-north-carolina-03-04-2022/event/2D005AF7C6236968"
+            }
+        ]
+    },
+    "Eventi per il genere Rock": {
+        "in California": 2
+    },
+    "eventi in California": {
+        "events": [
+            {
+                "localTime": "19:00:00",
+                "city": "Inglewood",
+                "name": "iHeartRadio ALTer EGO Presented by Capital One",
+                "genre": "Rock",
+                "stateCode": "CA",
+                "state": "California",
+                "localDate": "2022-01-15",
+                "url": "https://www.ticketmaster.com/iheartradio-alter-ego-presented-by-capital-inglewood-california-01-15-2022/event/09005B4712E4601E"
+            },
+            {
+                "localTime": "19:00:00",
+                "city": "Los Angeles",
+                "name": "Imagine Dragons: Mercury World Tour",
+                "genre": "Rock",
+                "stateCode": "CA",
+                "state": "California",
+                "localDate": "2022-03-12",
+                "url": "https://www.ticketmaster.com/imagine-dragons-mercury-world-tour-los-angeles-california-03-12-2022/event/2C005B1FEC0B0D99"
+            }
+        ]
+    }
+}
+```
 
 ## JUnit Test
 
@@ -42,7 +172,7 @@ Il codice java dell'applicazione "Eventi USA TicketMaster" è interamente docume
 
 ## Software Utilizzati
 * L'IDE [Eclipse](https://www.eclipse.org/downloads/) per la scrittura del codice dell'intero applicativo
-* [Postman](https://www.postman.com/downloads/) per il testing delle API, impiegato per gestire le chiamate `GET` delle rotte.
+* [Postman](https://www.postman.com/downloads/) per il testing delle API, impiegato per gestire le chiamate `GET` e `POST` delle rotte.
 * [GitHub](https://github.com/), per il versioning del codice dell'interfaccia. 
 * [Git Bash](https://git-scm.com/downloads), per eseguire il versioning del codice tramite terminale direttamente dalla cartella locale del progetto.
 * Il framework [JUnit 5](https://junit.org/junit5/), per lo Unit Testing dei metodi dell'applicativo
