@@ -13,6 +13,27 @@ import it.univpm.ProgettoEsame.stats.GenreStats;
  *
  */
 public class GenreFilter {
+	
+	/**
+	 * Metodo che filtra il vettore di eventi per un determinato genere.
+	 * 
+	 * @param genere Genere per il filtro.
+	 * @param eventiDaFiltrare Vettore contenente gli eventi da filtrare.
+	 * @return eventiFiltrati Vettore di eventi filtrati per genere.
+	 */
+	public Vector<Evento> Filtrogenere (String genere, Vector<Evento> eventiDaFiltrare) {
+	
+		Vector<Evento> eventiFiltrati = new Vector<Evento>();
+		
+		for (Evento ev : eventiDaFiltrare) {
+			
+			if(genere.equals(ev.getGenere()))
+				eventiFiltrati.add(ev);
+			
+		}	
+	
+		return eventiFiltrati;
+	}
 
 	/**
 	 * Metodo che che fornisce la statistica degli eventi filtrati per genere.
@@ -40,26 +61,5 @@ public class GenreFilter {
 		}
 		
 		return result;
-	}
-	
-	/**
-	 * Metodo che filtra il vettore di eventi per un determinato genere.
-	 * 
-	 * @param genere Genere per il filtro.
-	 * @param eventiDaFiltrare Vettore contenente gli eventi da filtrare.
-	 * @return eventiFiltrati Vettore di eventi filtrati per genere.
-	 */
-	public Vector<Evento> Filtrogenere (String genere, Vector<Evento> eventiDaFiltrare) {
-	
-		Vector<Evento> eventiFiltrati = new Vector<Evento>();
-		
-		for (Evento ev : eventiDaFiltrare) {
-			
-			if(genere.equals(ev.getGenere()))
-				eventiFiltrati.add(ev);
-			
-		}	
-	
-		return eventiFiltrati;
 	}
 }
