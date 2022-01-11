@@ -67,7 +67,8 @@ La rotta restituisce un JSONObject contenente il numero minimo/massimo/medio di 
 
 ## 5.   /Eventi?
 
-Questa rotta è di tipo POST e richiede un body di questo tipo:
+Questa rotta è di tipo POST restituisce un JSONObject contenente le statistiche degli eventi filtrati per uno o più stati, uno o più generi e in base ad un periodo personalizzato.
+Richiede un body di questo tipo:
 
 ```json
 {
