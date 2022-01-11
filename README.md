@@ -59,7 +59,7 @@ La rotta restituisce un JSONObject contenente il numero totale eventi di un dete
 La rotta restituisce un JSONObject contenente il numero totale di eventi di un determinato stato filtrati per un determinato genere, i parametri da passare sono lo stateCode 
 e il genere.
 
-<img width="513" alt="Schermata 2022-01-11 alle 17 12 21" src="https://user-images.githubusercontent.com/93603411/148987789-2674ac72-ab8c-4fdf-8baf-da88efcf3fc0.png">
+<img width="852" alt="Schermata 2022-01-11 alle 18 51 38" src="https://user-images.githubusercontent.com/93603411/148995986-b5337306-0817-4141-bc76-dabfc032e283.png">
 
 
 
