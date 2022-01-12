@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import it.univpm.ProgettoEsame.stats.MinMaxMedia;
+import it.univpm.ProgettoEsame.stats.MinMaxMediaStats;
 
 /**
  * Classe che testa il funzionamento dei metodi della Classe MinMaxMedia (stats).
@@ -15,7 +15,7 @@ class MinMaxMediaStatsTest {
     
 	int [] v = {1,9,5,4,7,4,2,6,7,0,4,10} ; 
 	int [] risultato = {0,1,2,4,4,4,5,6,7,7,9,10};
-	MinMaxMedia test;
+	MinMaxMediaStats test;
 	
 	/**
 	 * Inizializza i componenti necessari per il test.
@@ -23,7 +23,7 @@ class MinMaxMediaStatsTest {
 	 */
 	@BeforeEach
 	void setUp() throws Exception {
-		test=new MinMaxMedia();
+		test=new MinMaxMediaStats();
 	}
 
 	/**

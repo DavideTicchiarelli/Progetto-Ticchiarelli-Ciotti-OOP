@@ -9,7 +9,7 @@ import it.univpm.ProgettoEsame.service.TicketmasterServiceImpl;
  * Classe che fornisce le statische del numero minimo,massimo e medio di eventi mensili o di un periodo personalizzato.
  *
  */
-public class MinMaxMedia {
+public class MinMaxMediaStats {
 
 	private int min;
 	private int max;
@@ -19,7 +19,7 @@ public class MinMaxMedia {
 /**
  * Costruttore della classe di default.
  */
-	public MinMaxMedia() {}
+	public MinMaxMediaStats() {}
 	
 /**
  * 

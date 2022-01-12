@@ -22,7 +22,7 @@ import it.univpm.ProgettoEsame.model.Evento;
 import it.univpm.ProgettoEsame.service.TicketmasterServiceImpl;
 import it.univpm.ProgettoEsame.stats.EventStats;
 import it.univpm.ProgettoEsame.stats.GenreStats;
-import it.univpm.ProgettoEsame.stats.MinMaxMedia;
+import it.univpm.ProgettoEsame.stats.MinMaxMediaStats;
 
 /**
  * Classe che gestisce tutte le chiamate.
@@ -100,7 +100,7 @@ public class TestTicketmasterController {
 	 */
 	@GetMapping(value="/eventiMensili")
 	public ResponseEntity<Object>getEventiMensili(@RequestParam(name="stateCode")String stateCode){
-		MinMaxMedia stats=new MinMaxMedia();
+		MinMaxMediaStats stats=new MinMaxMediaStats();
 		return new ResponseEntity<>(stats.EventiMensili(stateCode),HttpStatus.OK);
 	}
 	

@@ -16,7 +16,7 @@ import it.univpm.ProgettoEsame.stats.GenreStats;
  *
  *
  */
-class GenreStatsTest {
+class GenreEventiTest {
 	
 	Evento ev,ev2;
 	Vector<Evento>eventiFiltrati;

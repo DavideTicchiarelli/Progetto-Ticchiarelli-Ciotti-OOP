@@ -6,7 +6,7 @@ import java.util.Vector;
 import org.json.simple.JSONObject;
 
 import it.univpm.ProgettoEsame.model.Evento;
-import it.univpm.ProgettoEsame.stats.MinMaxMedia;
+import it.univpm.ProgettoEsame.stats.MinMaxMediaStats;
 
 /**
  * Classe che permette di filtrare gli eventi in base ad un periodo personalizzato.
@@ -50,7 +50,7 @@ public class MinMaxMediaFilter {
 		
 		JSONObject result=new JSONObject();
 		
-		MinMaxMedia stats=new MinMaxMedia();
+		MinMaxMediaStats stats=new MinMaxMediaStats();
 		Vector<Evento>eventiFiltrati=new Vector<Evento>();
 		
 		eventiFiltrati=filtroperiodo(inizio,fine,eventidaFiltrare);
