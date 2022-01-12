@@ -171,7 +171,7 @@ All'interno del progetto è presente anche un package di test contente le seguen
 
 * [toJSONtest](https://github.com/DavideTicchiarelli/Progetto-esame-Ticchiarelli-Ciotti-OOP/blob/master/ProgettoEsame/src/test/java/it/univpm/ProgettoEsame/toJSONtest.java), un test del metodo toJSON contenuto nella classe TicketmasterServiceImpl che verifica se l'oggetto viene convertito correttamente in JSONObject.
 
-* [GenreStatsTest](https://github.com/DavideTicchiarelli/Progetto-esame-Ticchiarelli-Ciotti-OOP/blob/master/ProgettoEsame/src/test/java/it/univpm/ProgettoEsame/GenreStatsTest.java), un test del metodo GenreEventi della classe GenreStats che verifica se il calcolo del numero totale di eventi per un determinato genere è corretto.
+* [GenreEventiTest](https://github.com/DavideTicchiarelli/Progetto-esame-Ticchiarelli-Ciotti-OOP/blob/master/ProgettoEsame/src/test/java/it/univpm/ProgettoEsame/GenreStatsTest.java), un test del metodo GenreEventi nella classe GenreStats che verifica se il calcolo del numero totale di eventi per un determinato genere è corretto.
 
 * [MinMaxMediaStatsTest](https://github.com/DavideTicchiarelli/Progetto-esame-Ticchiarelli-Ciotti-OOP/blob/master/ProgettoEsame/src/test/java/it/univpm/ProgettoEsame/MinMaxMediaStatsTest.java), un test dei tre metodi contenuti nella classe MinMaxMedia che verifica se il calcolo del minimo,massimo e medio di un vettore è corretto.
 
