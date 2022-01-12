@@ -40,38 +40,32 @@ Le richieste che l'utente può effettuare tramite Postman devono essere all'indi
 localhost:8080
 ```
 
-## 1.   /getEvento?stateCode=' '
+### 1.   /getEvento?stateCode=' '
 
 La rotta restituisce un JSONObject contenente tutti gli eventi e le relative informazioni di un determinato stato passando come parametro il relativo stateCode. 
 
 ![WhatsApp Image 2022-01-11 at 16 54 19](https://user-images.githubusercontent.com/95363767/148976420-e727fea2-392d-4d47-a5b3-9d2cf9284135.jpeg)
 
-## 2.   /numEventi?stateCode=' '
+### 2.   /numEventi?stateCode=' '
 
 La rotta restituisce un JSONObject contenente il numero totale eventi di un determinato stato, il parametro da passare è lo stateCode. 
 
 <img width="450" alt="Schermata 2022-01-11 alle 17 08 39" src="https://user-images.githubusercontent.com/93603411/148987410-294856ba-6a61-4b9f-b0f1-8ec5d0de2c60.png">
 
-
-
-## 3.   /numGenere?stateCode=' '&genre=' '
+### 3.   /numGenere?stateCode=' '&genre=' '
 
 La rotta restituisce un JSONObject contenente il numero totale di eventi di un determinato stato filtrati per un determinato genere, i parametri da passare sono lo stateCode 
 e il genere.
 
 <img width="852" alt="Schermata 2022-01-11 alle 18 51 38" src="https://user-images.githubusercontent.com/93603411/148995986-b5337306-0817-4141-bc76-dabfc032e283.png">
 
-
-
-## 4.   /eventiMensili?stateCode=' '
+### 4.   /eventiMensili?stateCode=' '
 
 La rotta restituisce un JSONObject contenente il numero minimo/massimo/medio di eventi di un determinato stato, il parametro da passare è lo stateCode.
 
 <img width="486" alt="Schermata 2022-01-11 alle 17 20 31" src="https://user-images.githubusercontent.com/93603411/148988080-8aa158b5-0112-4755-814d-b95432ada883.png">
 
-
-
-## 5.   /Eventi?
+### 5.   /Eventi?
 
 Questa rotta è di tipo POST restituisce un JSONObject contenente le statistiche degli eventi filtrati per uno o più stati, uno o più generi e in base ad un periodo personalizzato.
 Richiede un body di questo tipo:
@@ -103,7 +97,7 @@ Richiede un body di questo tipo:
 ```
 - **stati** è il JSONArray che contiene gli stateCode degli stati di cui si vuole fare statistica.Gli stateCode ammissibili si trovano nel file "statecodes.txt" all'interno della cartella resources.
 - **generi** è il JSONArray che contiene i generi degli eventi relativi al rispettivo stato di cui si vuole fare statistica.I generi ammissibili si trovano nel file "generi.txt" all'interno della cartella resources.
-- **generi** è il JSONObject che contiene l'inizio e la fine del periodo personalizzato degli eventi di cui si vuole fare la statistica. Inizio e fine devono essere forniti nel formato "yyyy-mm-dd".
+- **periodo** è il JSONObject che contiene l'inizio e la fine del periodo personalizzato degli eventi di cui si vuole fare la statistica. Inizio e fine devono essere forniti nel formato "yyyy-mm-dd".
 
 La risposta della rotta è la seguente:
 
@@ -173,13 +167,13 @@ La risposta della rotta è la seguente:
 ```
 
 ## JUnit Test
-All'interno del progetto è presente anche un package di test:
+All'interno del progetto è presente anche un package di test contente le seguenti classi:
 
-* Un test del metodo toJSON della classe TicketmasterServiceImpl che verifica se l'oggetto viene convertito correttamente in JSONObject.
+* [toJSONtest](https://github.com/DavideTicchiarelli/Progetto-esame-Ticchiarelli-Ciotti-OOP/blob/master/ProgettoEsame/src/test/java/it/univpm/ProgettoEsame/toJSONtest.java), un test del metodo toJSON contenuto nella classe TicketmasterServiceImpl che verifica se l'oggetto viene convertito correttamente in JSONObject.
 
-* Un test del metodo GenreEventi della classe GenreStats che verifica se il calcolo del numero totale di eveti per un determinato genere è corretto.
+* [GenreStatsTest](https://github.com/DavideTicchiarelli/Progetto-esame-Ticchiarelli-Ciotti-OOP/blob/master/ProgettoEsame/src/test/java/it/univpm/ProgettoEsame/GenreStatsTest.java), un test del metodo GenreEventi della classe GenreStats che verifica se il calcolo del numero totale di eventi per un determinato genere è corretto.
 
-* Un test di tre metodi della classe MinMaxMedia che verificano se il calcolo del minimo,massimo e medio di un vettore è corretto.
+* [MinMaxMediaStatsTest](https://github.com/DavideTicchiarelli/Progetto-esame-Ticchiarelli-Ciotti-OOP/blob/master/ProgettoEsame/src/test/java/it/univpm/ProgettoEsame/MinMaxMediaStatsTest.java), un test dei tre metodi contenuti nella classe MinMaxMedia che verifica se il calcolo del minimo,massimo e medio di un vettore è corretto.
 
 ## Documentazione JavaDoc
 Il codice java dell'applicazione "Eventi USA TicketMaster" è interamente documentato attraverso [Javadoc](https://github.com/DavideTicchiarelli/Progetto-esame-Ticchiarelli-Ciotti-OOP/tree/master/ProgettoEsame/doc).
