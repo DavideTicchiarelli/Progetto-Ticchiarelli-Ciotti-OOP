@@ -7,6 +7,7 @@
 ## **Sommario**
 
 * [Introduzione](#introduzione)
+  * [Statistiche e Filtri](#statistiche-e-filtri)
 * [Installazione](#installazione)
 * [Rotte](#rotte)
 * [JUnit Test](#junit-test)
@@ -15,9 +16,11 @@
 * [Autori](#autori)
 
 ## Introduzione
-L'obiettivo dell'applicazione "Eventi USA TicketMaster" è quello di consentire l'analisi degli eventi che avranno luogo negli Stati Uniti, utilizzando le API di ticketmaster,sito per la gestione ed la prenotazione di vari eventi (musicali, artistici, sportivi, ecc...).
-In particolare, utilizzando le API fornite da TicketMaster, il programma ,grazie anche all'ausilio di filtri, dovrà fornire gli eventi che si terranno negli USA e dovrà, inoltre, fornire alcune statistiche.
-Come anticipato nelle righe precedenti, dal punto di vista delle specifiche tecniche,l'applicazione sviluppata fornisce le seguenti statistiche:
+"Eventi USA TicketMaster" è un'applicazione che consente di visualizzare l'analisi degli eventi che avranno luogo negli Stati Uniti, utilizzando le API di ticketmaster,sito per la gestione ed la prenotazione di vari eventi (musicali, artistici, sportivi, ecc...).
+In particolare il programma, grazie anche all'ausilio di filtri, fornisce la lista dgli eventi che si terranno negli USA e le relative statistiche.
+
+### Statistiche e Filtri
+L'applicazione sviluppata fornisce le seguenti statistiche:
 * numero totale di eventi per ogni Stato.
 * numero totale di eventi raggruppati per genere per ogni Stato.
 * numero minimo/massimo/media degli eventi mensili per ogni Stato.
