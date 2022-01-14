@@ -2,6 +2,7 @@ package it.univpm.ProgettoEsame.controller;
 
 import java.util.Vector;
 
+import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -142,6 +143,8 @@ public class TestTicketmasterController {
 	public ResponseEntity<Object> getEventi(@RequestBody String body){
 
 		JSONObject risultato=new JSONObject();
+		JSONArray eventi=new JSONArray();
+		JSONArray eventi2=new JSONArray();
 		Vector<Evento>eventidaFiltrare=new Vector<Evento>();
 		Vector<Evento>eventidaFiltrare2=new Vector<Evento>();
 		JSONObject eventiFiltratiPerStati=new JSONObject();
@@ -150,6 +153,8 @@ public class TestTicketmasterController {
 		JSONObject eventiFiltratiPerGenere2=new JSONObject();
 		JSONObject eventiFiltratiPeriodo=new JSONObject();
 		JSONObject eventiFiltratiPeriodo2=new JSONObject();
+		JSONObject eventiFiltratiPerGenere3=new JSONObject();
+		JSONObject eventiFiltratiPerGenere4=new JSONObject();
 
 		BodyEventi eb;
 		Vector<String>stati,generi,periodo;
@@ -184,32 +189,44 @@ public class TestTicketmasterController {
 		}
 
 		eventiFiltratiPerStati=filtrostati.FiltroStati(stato1,eventidaFiltrare);
-		eventiFiltratiPerGenere=filtrogenere.FiltroGenere(genere1,eventidaFiltrare);
-		eventiFiltratiPeriodo=filtroperiodo.filtroPeriodo(inizio,fine, eventidaFiltrare);
+		eventiFiltratiPerGenere=filtrogenere.FiltroGenere(genere1,filtroperiodo.filtroperiodo(inizio, fine, eventidaFiltrare));
+		eventiFiltratiPerGenere3=filtrogenere.FiltroGenere(genere1,filtroperiodo.filtroperiodo(inizio, fine,eventidaFiltrare2));
+		eventiFiltratiPeriodo=filtroperiodo.filtroPeriodo(inizio,fine,eventidaFiltrare);
 		Evento ev1=new Evento();
 		ev1=eventidaFiltrare.get(0);
 		eventiFiltratiPerStati2=filtrostati.FiltroStati(stato2,eventidaFiltrare2);
 		eventiFiltratiPerGenere2=filtrogenere.FiltroGenere(genere2,eventidaFiltrare2);
+		eventiFiltratiPerGenere4=filtrogenere.FiltroGenere(genere2,eventidaFiltrare);
 		eventiFiltratiPeriodo2=filtroperiodo.filtroPeriodo(inizio,fine, eventidaFiltrare2);
 		Evento ev2=new Evento();
 		ev2=eventidaFiltrare2.get(0);
 
 		risultato.put("Eventi in "+ev1.getStato(),eventiFiltratiPerStati);		
-		risultato.put("Eventi per il genere "+genere1,eventiFiltratiPerGenere);
+		
+		eventi.add(eventiFiltratiPerGenere);
+		eventi.add(eventiFiltratiPerGenere3);
+	
+		risultato.put("Eventi per il genere "+genere1,eventi);
+			
 		risultato.put("Statistiche periodiche di eventi in "+ev1.getStato(), eventiFiltratiPeriodo);
 		
 		try {
-			risultato.put("eventi in "+ev1.getStato(),ticketmasterservice.getResultEventiPeriodo(stato1,genere1,inizio,fine));
+			risultato.put("eventi in "+ev1.getStato(),ticketmasterservice.getResultEventiPeriodo(stato1,genere1,genere2,inizio,fine));
 		} catch (EventiException e) {
 			e.printStackTrace();
 		}
 		
 		risultato.put("Eventi in "+ev2.getStato(),eventiFiltratiPerStati2);
-		risultato.put("Eventi per il genere "+genere2,eventiFiltratiPerGenere2);
+		
+		eventi2.add(eventiFiltratiPerGenere2);
+		eventi2.add(eventiFiltratiPerGenere4);
+		
+		risultato.put("Eventi per il genere "+genere2,eventi2);
+		
 		risultato.put("Statistiche periodiche di eventi in "+ev2.getStato(), eventiFiltratiPeriodo2);	
 		
 		try {
-			risultato.put("eventi in "+ev2.getStato(),ticketmasterservice.getResultEventiPeriodo(stato2,genere2,inizio,fine));
+			risultato.put("eventi in "+ev2.getStato(),ticketmasterservice.getResultEventiPeriodo(stato2,genere2,genere1,inizio,fine));
 		} catch (EventiException e) {
 			e.printStackTrace();
 		}

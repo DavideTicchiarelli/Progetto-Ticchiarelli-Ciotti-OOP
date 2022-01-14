@@ -47,4 +47,5 @@ public class GenreStats {
 		obj.put("in "+ev.getStato(), contGenre);
 		return obj;
 	}
+	
 }

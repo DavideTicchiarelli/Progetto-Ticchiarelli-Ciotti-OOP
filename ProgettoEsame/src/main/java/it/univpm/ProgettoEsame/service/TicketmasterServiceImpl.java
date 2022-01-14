@@ -268,13 +268,13 @@ public class TicketmasterServiceImpl implements TicketmasterService {
 	 * @throws EventiException se il vettore filtrato è vuoto.
 	 */
 	@Override
-	public JSONObject getResultEventiPeriodo(String statecode,String genere,String inizio,String fine) throws EventiException {
+	public JSONObject getResultEventiPeriodo(String statecode,String genere1,String genere2,String inizio,String fine) throws EventiException {
 
 		GenreFilter filtro=new GenreFilter();
 		MinMaxMediaFilter filter=new MinMaxMediaFilter();
 		Vector<Evento>eventi=new Vector<Evento>();
 
-		eventi=(filtro.Filtrogenere(genere, getStatoEvents(statecode)));
+		eventi=(filtro.FiltroPiuGeneri(genere1,genere2,getStatoEvents(statecode)));
 
 		if(eventi.isEmpty()) {
 			throw new EventiException("Il vettore di eventi per lo stato è vuoto");
