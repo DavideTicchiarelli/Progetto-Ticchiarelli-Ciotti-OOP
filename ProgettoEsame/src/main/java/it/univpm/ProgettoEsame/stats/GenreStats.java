@@ -42,7 +42,7 @@ public class GenreStats {
 		}
 		
 		if(eventiFiltrati.isEmpty()) {
-			throw new EventiException("Nessun evento per il genere "+ev.getGenere());
+			throw new EventiException("Nessun evento per il genere "+genre);
 		}
 		obj.put("in "+ev.getStato(), contGenre);
 		return obj;
