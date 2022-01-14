@@ -42,6 +42,7 @@ public class GenreFilter {
 	 * @param eventiDaFiltrare Vettore contenente gli eventi da filtrare.
 	 * @return result JSONObject che fornisce la statistica degli eventi filtrati.
 	 */
+	@SuppressWarnings("unchecked")
 	public JSONObject FiltroGenere (String genere, Vector<Evento> eventiDaFiltrare) {
 		GenreStats stats=new GenreStats();
 		JSONObject result=new JSONObject();
@@ -57,6 +58,7 @@ public class GenreFilter {
 		try {
 			result=stats.GenreEventi(eventiFiltrati, genere);
 		} catch (EventiException e) {
+			result.put("ERRORE","Nessun evento per il genere "+genere);
 			e.printStackTrace();
 		}
 		
