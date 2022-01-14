@@ -115,7 +115,7 @@ La risposta della rotta è la seguente:
         }
     ],
     "Eventi in California": {
-        "Totale": 20
+        "Totale": 4
     },
     "Statistiche periodiche di eventi in California": {
         "numero medio di eventi": 2.0,
@@ -123,7 +123,7 @@ La risposta della rotta è la seguente:
         "numero minimo di eventi": 0
     },
     "Eventi in North Carolina": {
-        "Totale": 20
+        "Totale": 4
     },
     "Statistiche periodiche di eventi in North Carolina": {
         "numero medio di eventi": 2.0,
