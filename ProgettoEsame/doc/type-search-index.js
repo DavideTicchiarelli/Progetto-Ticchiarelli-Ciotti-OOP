@@ -1,1 +1,1 @@
-typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"it.univpm.ProgettoEsame.controller","l":"TestTicketmasterController"}];updateSearchResults();
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"it.univpm.ProgettoEsame.stats","l":"EventStats"}];updateSearchResults();

@@ -21,7 +21,7 @@ public class EventStats {
 	
 	
 	/**
-	 * Metodo che analizza l'API e restituisce un vettore contente il numero di eventi mensili.
+	 * Metodo che analizza l'API e restituisce un vettore contenente il numero di eventi mensili.
 	 * 
 	 * @param stateCode Statecode dello stato di cui si vogliono visualizzare gli eventi.
 	 * @return monthsEvents Vettore contente il numero di eventi mensili.
@@ -43,6 +43,48 @@ public class EventStats {
 
 			
 			ev=eventiPerStato.get(i);
+			LocalDate mese1=ev.getDate(); 
+
+			for(int j=1;j<=12;j++) {
+
+				LocalDate mese2=mese1.withMonth(j);
+
+				if(mese1.equals(mese2)) {
+
+					int counter=j-1;
+					monthsEvents[counter]+=1;
+				} 
+				else
+				{					
+					int counter=j-1;
+					monthsEvents[counter]+=0;
+				}
+
+				int cont=j+1;
+				mese2.plusMonths(cont);
+			}
+		}
+		
+		return monthsEvents;
+
+	}
+	
+	/**
+	 * Metodo che analizza il vettore di eventi filtrati per genere,stato e periodo e restituisce un vettore contenente il numero di eventi mensili.
+	 * 
+	 * @param eventiFiltrati Vettore di eventi filtrati per genere,stato e periodo.
+	 * @return monthsEvents Vettore contente il numero di eventi mensili.
+	 */
+	public int[] MonthsEvents(Vector<Evento>eventiFiltrati) {
+
+		Evento ev=new Evento();
+
+		monthsEvents=new int[12];
+
+		for(int i=0;i<eventiFiltrati.size();i++) {
+
+			
+			ev=eventiFiltrati.get(i);
 			LocalDate mese1=ev.getDate(); 
 
 			for(int j=1;j<=12;j++) {
@@ -129,13 +171,13 @@ public class EventStats {
  * @return obj JSONObject contenente il numero totale di eventi di uno Stato.
  */
 	@SuppressWarnings("unchecked")
-	public JSONObject TotEventi(Vector<Evento>eventidaFiltrare,String stateCode) {
+	public JSONObject TotEventi(Vector<Evento>eventidaFiltrare) {
 		
 		JSONObject obj=new JSONObject();
 
 		int eventiTot=0;
 		
-		monthsEvents=MonthsEvents(stateCode);
+		monthsEvents=MonthsEvents(eventidaFiltrare);
 		
 		for(int i=0;i<monthsEvents.length;i++) {
 			eventiTot+=monthsEvents[i];	

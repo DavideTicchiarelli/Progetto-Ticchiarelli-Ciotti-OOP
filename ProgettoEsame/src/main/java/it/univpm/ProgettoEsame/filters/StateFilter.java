@@ -33,7 +33,7 @@ public class StateFilter {
 
 		}
 
-		return 	stats.TotEventi(eventiFiltrati, stato);
+		return 	stats.TotEventi(eventiFiltrati);
 
 	}
 

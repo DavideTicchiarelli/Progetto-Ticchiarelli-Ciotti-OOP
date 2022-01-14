@@ -188,13 +188,13 @@ public class TestTicketmasterController {
 			e.printStackTrace();
 		}
 
-		eventiFiltratiPerStati=filtrostati.FiltroStati(stato1,eventidaFiltrare);
+		eventiFiltratiPerStati=filtrostati.FiltroStati(stato1,filtrogenere.FiltroPiuGeneri(genere1,genere2,filtroperiodo.filtroperiodo(inizio, fine, eventidaFiltrare)));
 		eventiFiltratiPerGenere=filtrogenere.FiltroGenere(genere1,filtroperiodo.filtroperiodo(inizio, fine, eventidaFiltrare));
 		eventiFiltratiPerGenere3=filtrogenere.FiltroGenere(genere1,filtroperiodo.filtroperiodo(inizio, fine,eventidaFiltrare2));
 		eventiFiltratiPeriodo=filtroperiodo.filtroPeriodo(inizio,fine,eventidaFiltrare);
 		Evento ev1=new Evento();
 		ev1=eventidaFiltrare.get(0);
-		eventiFiltratiPerStati2=filtrostati.FiltroStati(stato2,eventidaFiltrare2);
+		eventiFiltratiPerStati2=filtrostati.FiltroStati(stato2,filtrogenere.FiltroPiuGeneri(genere2,genere1,filtroperiodo.filtroperiodo(inizio, fine, eventidaFiltrare2)));
 		eventiFiltratiPerGenere2=filtrogenere.FiltroGenere(genere2,eventidaFiltrare2);
 		eventiFiltratiPerGenere4=filtrogenere.FiltroGenere(genere2,eventidaFiltrare);
 		eventiFiltratiPeriodo2=filtroperiodo.filtroPeriodo(inizio,fine, eventidaFiltrare2);
