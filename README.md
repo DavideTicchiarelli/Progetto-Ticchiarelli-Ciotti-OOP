@@ -106,15 +106,20 @@ La risposta della rotta è la seguente:
 
 ```json
 {
-    "Eventi per il genere Hockey": {
-        "in North Carolina": 1
-    },
+    "Eventi per il genere Hockey": [
+        {
+            "in North Carolina": 1
+        },
+        {
+            "in California": 2
+        }
+    ],
     "Eventi in California": {
         "Totale": 20
     },
     "Statistiche periodiche di eventi in California": {
         "numero medio di eventi": 2.0,
-        "numero massimo di eventi": 11,
+        "numero massimo di eventi": 8,
         "numero minimo di eventi": 0
     },
     "Eventi in North Carolina": {
@@ -122,11 +127,41 @@ La risposta della rotta è la seguente:
     },
     "Statistiche periodiche di eventi in North Carolina": {
         "numero medio di eventi": 2.0,
-        "numero massimo di eventi": 11,
+        "numero massimo di eventi": 12,
         "numero minimo di eventi": 0
     },
     "eventi in North Carolina": {
         "events": [
+            {
+                "localTime": "20:00:00",
+                "city": "Charlotte",
+                "name": "Eagles",
+                "genre": "Rock",
+                "stateCode": "NC",
+                "state": "North Carolina",
+                "localDate": "2022-02-21",
+                "url": "https://www.ticketmaster.com/eagles-charlotte-north-carolina-02-21-2022/event/2D005B768B2A1822"
+            },
+            {
+                "localTime": "19:00:00",
+                "city": "Raleigh",
+                "name": "Imagine Dragons: Mercury World Tour",
+                "genre": "Rock",
+                "stateCode": "NC",
+                "state": "North Carolina",
+                "localDate": "2022-02-10",
+                "url": "https://www.ticketmaster.com/imagine-dragons-mercury-world-tour-raleigh-north-carolina-02-10-2022/event/2D005B1FFA456D3F"
+            },
+            {
+                "localTime": "20:00:00",
+                "city": "Raleigh",
+                "name": "Eagles",
+                "genre": "Rock",
+                "stateCode": "NC",
+                "state": "North Carolina",
+                "localDate": "2022-03-02",
+                "url": "https://www.ticketmaster.com/eagles-raleigh-north-carolina-03-02-2022/event/2D005B77926921AA"
+            },
             {
                 "localTime": "19:00:00",
                 "city": "Raleigh",
@@ -139,9 +174,14 @@ La risposta della rotta è la seguente:
             }
         ]
     },
-    "Eventi per il genere Rock": {
-        "in California": 2
-    },
+    "Eventi per il genere Rock": [
+        {
+            "in California": 2
+        },
+        {
+            "in North Carolina": 3
+        }
+    ],
     "eventi in California": {
         "events": [
             {
@@ -163,6 +203,26 @@ La risposta della rotta è la seguente:
                 "state": "California",
                 "localDate": "2022-03-12",
                 "url": "https://www.ticketmaster.com/imagine-dragons-mercury-world-tour-los-angeles-california-03-12-2022/event/2C005B1FEC0B0D99"
+            },
+            {
+                "localTime": "19:30:00",
+                "city": "Los Angeles",
+                "name": "Los Angeles Kings vs. Boston Bruins",
+                "genre": "Hockey",
+                "stateCode": "CA",
+                "state": "California",
+                "localDate": "2022-02-28",
+                "url": "https://www.ticketmaster.com/event/Z7r9jZ1AdF4FA"
+            },
+            {
+                "localTime": "19:00:00",
+                "city": "Los Angeles",
+                "name": "Los Angeles Kings vs. Chicago Blackhawks",
+                "genre": "Hockey",
+                "stateCode": "CA",
+                "state": "California",
+                "localDate": "2022-03-24",
+                "url": "https://www.ticketmaster.com/event/Z7r9jZ1AdF4Fa"
             }
         ]
     }
