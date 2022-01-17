@@ -75,7 +75,7 @@ public class EventStats {
 	 * @param eventiFiltrati Vettore di eventi filtrati per genere,stato e periodo.
 	 * @return monthsEvents Vettore contente il numero di eventi mensili.
 	 */
-	public int[] MonthsEvents(Vector<Evento>eventiFiltrati) {
+	public int[] MonthsEventsFiltrati (Vector<Evento>eventiFiltrati) {
 
 		Evento ev=new Evento();
 
@@ -177,7 +177,7 @@ public class EventStats {
 
 		int eventiTot=0;
 		
-		monthsEvents=MonthsEvents(eventidaFiltrare);
+		monthsEvents=MonthsEventsFiltrati(eventidaFiltrare);
 		
 		for(int i=0;i<monthsEvents.length;i++) {
 			eventiTot+=monthsEvents[i];	

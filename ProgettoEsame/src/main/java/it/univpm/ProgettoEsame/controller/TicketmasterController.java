@@ -33,7 +33,7 @@ import it.univpm.ProgettoEsame.stats.MinMaxMediaStats;
  *
  */
 @RestController
-public class TestTicketmasterController {
+public class TicketmasterController {
 	
 	@Autowired
 	private TicketmasterServiceImpl ticketmasterservice;
